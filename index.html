@@ -11,6 +11,10 @@
 	<body class="is-preload">
 
 		<!-- Header -->
+			<video autoplay muted id="myVideo">
+						<source src="assets/css/images/Laptop.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+			</video>
 			<section id="header">
 				<header>
 					<h1>Cybersecutiry Essentials.</h1>
@@ -216,6 +220,20 @@
 		</section>
 
 		<!-- Scripts -->
+			<script>
+				var video = document.getElementById("myVideo");
+				var btn = document.getElementById("myBtn");
+				
+				function myFunction() {
+				if (video.paused) {
+					video.play();
+					btn.innerHTML = "Pause";
+				} else {
+					video.pause();
+					btn.innerHTML = "Play";
+				}
+				}
+			</script>			
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
