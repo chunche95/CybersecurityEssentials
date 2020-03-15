@@ -29,9 +29,9 @@ git nota "Images"
 git sube
 
 git add index.html
-git nota "Introducction Cybersecurity - NetAcademy."
+git nota "Introduction Cybersecurity - NetAcademy."
 git sube
 
 git add subida.sh
-git nota "Script subida archivos"
+git nota "Script - Update Folderes"
 git sube
