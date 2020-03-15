@@ -35,3 +35,27 @@ git sube
 git add subida.sh
 git nota "Script - Update Folderes"
 git sube
+
+git add cybersecurityEssentials/assets/css/.
+git nota "Style Contents"
+git sube
+
+git add cybersecurityEssentials/assets/fonts/.
+git nota "fonts contents"
+git sube
+
+git add cybersecurityEssentials/assets/js/.
+git nota "JS contents"
+git sube
+
+git add cybersecurityEssentials/assets/sass/.
+git nota "Sass contents"
+git sube 
+
+git images/.
+git nota "Images to contents"
+git sube 
+
+git add cap1.html 
+git nota "Capítulo 1 -  La ciberseguridad"
+git sube 
