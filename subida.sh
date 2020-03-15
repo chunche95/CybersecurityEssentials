@@ -52,10 +52,10 @@ git add cybersecurityEssentials/assets/sass/.
 git nota "Sass contents"
 git sube 
 
-git images/.
+git add cybersecurityEssentials/images/.
 git nota "Images to contents"
 git sube 
 
-git add cap1.html 
+git add cybersecurityEssentials/cap1.html 
 git nota "Capítulo 1 -  La ciberseguridad"
 git sube 
