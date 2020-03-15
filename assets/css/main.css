@@ -78,7 +78,7 @@ input, select, textarea {
 
 	body {
 		background-color: #183026;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/1bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -1750,7 +1750,7 @@ input, select, textarea {
 		padding: 1em 3em 1em 3em;
 		text-align: center;
 		border-radius: 3em;
-		font-weight: 400;
+		font-weight: 800;
 	}
 
 		input[type="button"]:hover,
@@ -1968,21 +1968,52 @@ input, select, textarea {
 		}
 
 /* Header */
-
-	#header {
-		-moz-transition: opacity 2s ease-in-out;
-		-webkit-transition: opacity 2s ease-in-out;
-		-ms-transition: opacity 2s ease-in-out;
-		transition: opacity 2s ease-in-out;
-		position: relative;
+	#myVideo {
+		position: fixed;
+		right: 0%;
+		top: 0%;
+		bottom: 0;
+		min-width: 100%; 
+		min-height: 100%;
+		background-image: url("images/overlay.png");
+		background: #023223b4 url("images/banner.svg") bottom center no-repeat;
+	}
+	#myBtn {
+		width: 200px;
+		font-size: 18px;
+		padding: 10px;
+		border: none;
+		background: #000;
 		color: #fff;
-		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+		cursor: pointer;
+	}
+	#myBtn:hover {
+		background: #ddd;
+		color: black;
+	}
+	#header {
+		-moz-transition: opacity 5s ease-in-out;
+		-webkit-transition: opacity 5s ease-in-out;
+		-ms-transition: opacity 5s ease-in-out;
+		transition: opacity 5s ease-in-out;
+		position: relative;
+		color: rgba(255, 249, 249, 0.932);
+		background: #f7f5f5e5 url("images/stunned.png") bottom center repeat-x;
+		text-shadow: 0 0 2.5px rgba(253, 249, 249, 0.925);
 		text-align: center;
-		margin: 0;
+		margin: -0.8rem 0;
 		padding: 5em 0 8em 0;
 		cursor: default;
 	}
-
+		
+	.content {
+			position: fixed;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.5);
+			color: #f1f1f1;
+			width: 100%;
+			padding: 20px;
+		  }
 		#header header {
 			display: inline-block;
 			padding: 0 0 4.5em 0;
@@ -2069,7 +2100,7 @@ input, select, textarea {
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		background: #35b88f url("images/banner.svg") bottom center no-repeat;
+		background: #023223b4 url("images/banner.svg") bottom center no-repeat;
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
