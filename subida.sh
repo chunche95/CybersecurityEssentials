@@ -59,3 +59,7 @@ git sube
 git add cybersecurityEssentials/cap1.html 
 git nota "Capítulo 1 -  La ciberseguridad"
 git sube 
+
+git add cybersecurityEssentials/videos/.
+git nota "Videos"
+git sube
