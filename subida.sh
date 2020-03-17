@@ -63,3 +63,7 @@ git sube
 git add cybersecurityEssentials/videos/.
 git nota "Videos"
 git sube
+
+git add cybersecurityEssentials/docs/.
+git nota "Documents"
+git sube
