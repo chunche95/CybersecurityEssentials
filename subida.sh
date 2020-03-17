@@ -67,3 +67,7 @@ git sube
 git add cybersecurityEssentials/docs/.
 git nota "Documents"
 git sube
+
+git add Hackers-Guide-to-Machine-Learning-with-Python/.
+git nota "Guide to ML Haking"
+git sube
