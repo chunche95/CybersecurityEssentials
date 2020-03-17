@@ -69,5 +69,5 @@ git nota "Documents"
 git sube
 
 git add Hackers-Guide-to-Machine-Learning-with-Python/.
-git nota "Guide to ML Haking"
+git nota "Guide to ML Hacking"
 git sube
