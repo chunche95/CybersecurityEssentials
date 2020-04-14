@@ -32,6 +32,7 @@ git add index.html
 git nota "Introduction Cybersecurity - NetAcademy."
 git sube
 
+
 git add subida.sh
 git nota "Script - Update Folderes"
 git sube
@@ -50,15 +51,19 @@ git sube
 
 git add cybersecurityEssentials/assets/sass/.
 git nota "Sass contents"
-git sube 
+git sube
 
 git add cybersecurityEssentials/images/.
 git nota "Images to contents"
-git sube 
+git sube
 
-git add cybersecurityEssentials/cap1.html 
+git add cybersecurityEssentials/cap1.html
 git nota "Capítulo 1 -  La ciberseguridad"
-git sube 
+git sube
+
+git add cybersecurityEssentials/cap2.html
+git nota "Capítulo 2 - Destrezas de la ciberseguridad"
+git sube
 
 git add cybersecurityEssentials/videos/.
 git nota "Videos"
