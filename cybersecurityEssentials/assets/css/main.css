@@ -2034,6 +2034,13 @@ input, select, textarea {
 		height: auto;
 		border-radius: 5px;	
 	}
+	.responsive2 {
+		width: 50%;
+		max-width: 45%;
+		height: auto;
+		border-radius: 20px;	
+		margin: 1% 25% ;
+	}
 		.image[data-position] img {
 			-moz-object-fit: cover;
 			-webkit-object-fit: cover;
