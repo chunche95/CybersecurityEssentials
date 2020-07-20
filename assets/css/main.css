@@ -1798,6 +1798,13 @@ input, select, textarea {
 			.button.style3:hover {
 				background: rgba(58, 57, 57, 0.025);
 			}
+			
+		.button.smallfloat {
+			font-size: 0.8em;
+			position: fixed;
+			outline: none;
+			margin: 3% 88%;
+		}
 
 /* Box */
 
@@ -2002,7 +2009,7 @@ input, select, textarea {
 		text-shadow: 0 0 2.5px rgba(253, 249, 249, 0.925);
 		text-align: center;
 		margin: -0.8rem 0;
-		padding: 5em 0 8em 0;
+		padding: 3em 0 8em 0;
 		cursor: default;
 	}
 		
@@ -2145,7 +2152,7 @@ input, select, textarea {
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		margin: 4.5em 0 0 0;
+		margin: 1.5em 0 0 0;
 	}
 
 		#footer:after {
