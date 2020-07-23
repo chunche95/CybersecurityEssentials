@@ -386,10 +386,66 @@
 										de red a los usuarios, los dispositivos o las aplicaciones. Existen dos tipos principales de ataques de DoS: 
 										<ul>
 											<li>
-												<strong>Cantidad abrumadora de tráfico.</strong>
+												<strong>Cantidad abrumadora de tráfico.</strong> el atacante envía una gran cantidad de datos a una velocidad que la red, el host o la aplicación no puede manejar. 
+												Esto ocasiona una disminución de la velocidad de transmisión o respuesta o una falla en un dispositivo o servicio.
 											</li>
 											<li>
-												<strong>Paquetes maliciosos formateados.</strong>
+												<strong>Paquetes maliciosos formateados.</strong> esto sucede cuando se envía un paquete malicioso formateado a un host o una aplicación y el receptor no puede manejarlo. 
+												Por ejemplo, una aplicación no puede identificar los paquetes que contienen errores o paquetes incorrectamente formateados, reenviados por el atacante.
+												Esto hace que el dispositivo receptor se ejecute muy lentamente o se detenga.
+											</li>
+										</ul>
+										Los ataques de DoS son un riesgo importante porque pueden interrumpir fácilmente la comunicación y causar una pérdida significativa de tiempo y dinero. 
+										Estos ataques son relativamente simples de llevar a cabo, incluso por un atacante inexperto. <br>
+										El objetivo de un ataque de denegación de servicio es denegar el acceso a usuarios autorizados al hacer que la red no esté disponible (recuerde los tres 
+										principios básicos de seguridad: confidencialidad, integridad y disponibilidad). <br>
+										Haga clic en Reproducir en la Figura 1 para ver las animaciones de un ataque de DoS.
+										<div>
+											<video src="videos/Ataque DDoS - ping.mp4" class="responsive" autoplay muted loop="loop"></video>
+										</div>
+										Un ataque de DoS distribuida (DDoS) es similar a un ataque de DoS pero proviene de múltiples fuentes coordinadas. Por ejemplo, un ataque de DDoS 
+										podría darse de la siguiente manera: <br>
+										Un atacante crea una red de hosts infectados, denominada botnet, compuesta por zombis. Los zombis son hosts infectados. El atacante utiliza sistemas del 
+										controlador para controlar a los zombis. Las computadoras zombis constantemente analizan e infectan más hosts, lo que genera más zombis. Cuando está listo, 
+										el pirata informático proporciona instrucciones a los sistemas manipuladores para que los botnet de zombis lleven a cabo un ataque de DDoS. <br>
+										Haga clic en Reproducir en la Figura 2 para ver las animaciones de un ataque de DDoS. Un ataque de denegación de servicio distribuido (DDoS) utiliza muchos zombies 
+										para sobrecargar un objetivo. <br>
+										<div>
+											<video src="videos/Ataque DDoS - Paquetes enviados.mp4" class="responsive" autoplay muted loop="loop"></video>
+										</div>										
+									</p>
+									<h2>Análisis</h2>
+									<p>
+	
+										La técnica de análisis es similar a escuchar a escondidas a alguien. Ocurre cuando los atacantes examinan todo el tráfico de red a medida que pasa por la NIC, 
+										independientemente de si el tráfico está dirigidos a ellos o no. Los delincuentes logran realizar análisis de la red con una aplicación de software, dispositivo 
+										de hardware o una combinación de ambos. Como se muestra en la figura, la práctica de análisis consiste en ver todo el tráfico de red o puede dirigirse a un protocolo, 
+										un servicio o incluso una cadena de caracteres específica, como un inicio de sesión o una contraseña. Algunos analizadores de protocolos de red observan todo el 
+										tráfico y modifican todo el tráfico o parte de este. <br>
+										La práctica de análisis también tiene sus beneficios. Los administradores de red pueden utilizar analizadores de protocolos para analizar el tráfico de red, 
+										identificar problemas de ancho de banda y para solucionar otros problemas de red. <br>
+										La seguridad física es importante para evitar la introducción de analizadores de protocolos en la red interna.
+									</p>
+									<h2>Falsificación de identidad. - spoofing.</h2>
+									<p>
+										La falsificación de identidad es un ataque que aprovecha una relación de confianza entre dos sistemas. Si dos sistemas aceptan la autenticación lograda por cada uno, es posible 
+										que una persona registrada en un sistema no pase nuevamente por un proceso de autenticación para acceder al otro sistema. Un atacante puede aprovechar esta disposición al enviar 
+										un paquete a un sistema que parece provenir de un sistema confiable. Dado que la relación de confianza existe, el sistema objetivo puede realizar la tarea solicitada sin autenticación. <br>
+										Existen varios tipos de ataques de suplantación de identidad. 
+										<ul>
+											<li>
+												La falsificación de direcciones MAC se produce cuando una computadora acepta los paquetes de datos según la dirección MAC de otra computadora.
+											</li>
+											<li>
+												La falsificación de direcciones IP envía paquetes IP de una dirección de origen falsificada para disfrazarse.
+											</li>
+											<li>
+												El Protocolo de resolución de dirección (ARP) es un protocolo que corrige las direcciones IP a direcciones MAC para transmitir datos. 
+												La suplantación de ARP envía mensajes ARP falsos a través de la LAN para conectar la dirección MAC del delincuente a la dirección IP de un miembro autorizado de la red.
+											</li>
+											<li>
+												El Sistema de nombres de dominio (DNS) asigna nombres de dominios en direcciones IP. La suplantación de identidad de servidor DNS modifica el servidor DNS para redirigir 
+												un nombre de dominio específico a una dirección IP diferente, controlada por el delincuente.
 											</li>
 										</ul>
 									</p>
