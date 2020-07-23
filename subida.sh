@@ -110,6 +110,6 @@ git add cybersecurityEssentials/cap2.html
 git nota "Capítulo 2 - Destrezas de la ciberseguridad"
 git sube
 
-git add cybersecurityEssentials/cap2.html
+git add cybersecurityEssentials/cap3.html
 git nota "Capítulo 3 - Amenazas, vulnerabilidades y ataques a la ciberseguridad"
 git sube
