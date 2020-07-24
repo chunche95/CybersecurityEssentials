@@ -451,16 +451,53 @@
 									</p>
 									<h2>Ataque man-in-the-middle</h2>
 									<p>
-										Un delincuente realiza un ataque man-in-the-middle (MitM) al interceptar las comunicaciones entre las computadoras para robar la información que transita por la red. El delincuente también puede elegir manipular los mensajes y retransmitir información falsa entre los hosts ya que estos desconocen que se produjo una modificación en los mensajes. El ataque MitM permite que el delincuente tome el control de un dispositivo sin el conocimiento del usuario.
+										Un delincuente realiza un ataque man-in-the-middle (MitM) al interceptar las comunicaciones entre las computadoras para robar la información que transita por la red. 
+										El delincuente también puede elegir manipular los mensajes y retransmitir información falsa entre los hosts ya que estos desconocen que se produjo una modificación en los mensajes. 
+										El ataque MitM permite que el delincuente tome el control de un dispositivo sin el conocimiento del usuario.
 										<div>
 											<video src="videos/MitMo.mp4" class="responsive" autoplay loop muted></video>
 										</div>
-										Man-In-The-Mobile (MitMo) es una variación de man-in-middle. MitMo toma el control de un dispositivo móvil. El dispositivo móvil infectado envía información confidencial del usuario a los atacantes. ZeuS, un ejemplo de ataque con capacidades de MitMo, permite que los atacantes capturen silenciosamente SMS de verificación de 2 pasos enviados a los usuarios. Por ejemplo, cuando un usuario establece una Id. de Apple, debe proporcionar un número de teléfono que admita SMS para recibir un código de verificación temporal mediante el mensaje de texto para probar la identidad del usuario. El malware espía en este tipo de comunicación y transmite la información a los delincuentes.
-										Un ataque de repetición se produce cuando un atacante captura una porción de una comunicación entre dos hosts y luego transmite el mensaje capturado más adelante. Los ataques de repetición evitan los mecanismos de autenticación.
+										Man-In-The-Mobile (MitMo) es una variación de man-in-middle. MitMo toma el control de un dispositivo móvil. El dispositivo móvil infectado envía información confidencial 
+										del usuario a los atacantes. ZeuS, un ejemplo de ataque con capacidades de MitMo, permite que los atacantes capturen silenciosamente SMS de verificación de 2 pasos enviados a los usuarios. <br>
+										Por ejemplo, cuando un usuario establece una Id. de Apple, debe proporcionar un número de teléfono que admita SMS para recibir un código de verificación temporal mediante el mensaje 
+										de texto para probar la identidad del usuario. El malware espía en este tipo de comunicación y transmite la información a los delincuentes. <br>
+										Un ataque de repetición se produce cuando un atacante captura una porción de una comunicación entre dos hosts y luego transmite el mensaje capturado más adelante. 
+										Los ataques de repetición evitan los mecanismos de autenticación.
 									</p>
 									<h2>Ataques de día cero</h2>
 									<p>
-										
+										Un ataque de día cero, a veces denominado una amenaza de día cero, es un ataque de la computadora que intenta explotar las vulnerabilidades del software que son desconocidas o no 
+										reveladas por el proveedor de software. El término hora cero describe el momento en que alguien descubre el ataque. Durante el tiempo que le toma al proveedor de software desarrollar 
+										y lanzar un parche, la red es vulnerable a estos ataques, como se muestra en la figura. La defensa contra estos rápidos ataques requiere que los profesionales de seguridad de red adopten 
+										una visión más sofisticada de la arquitectura de red. Ya no es posible contener las intrusiones en algunos puntos de la red. <br>
+										<img src="images/Día 0 - MIE.PNG" class="responsive" alt="">
+									</p>
+									<h2>Registro de teclado.</h2>
+									<p>
+										El registro del teclado es un programa de software que registra las teclas de los usuarios del sistema. Los delincuentes pueden implementar registros de teclas mediante software instalado 
+										en un sistema informático o a través de hardware conectado físicamente a una computadora. El delincuente configura el software de registro de claves para enviar por correo electrónico 
+										el archivo de registro. Las teclas capturadas en el archivo de registro pueden revelar nombres de usuario, contraseñas, sitios web visitados y otra información confidencial. <br>
+										Los registros de teclado pueden ser software comerciales y legítimos. A menudo, los padres adquieren software de registro de clave para realizar el seguimiento de sitios web y del 
+										comportamiento de los niños que utilizan Internet. Muchas aplicaciones antispyware pueden detectar y eliminar registros de clave no autorizados. Si bien el software de registro de claves es legal, 
+										los delincuentes usan el software para fines ilegales. 
+									</p>
+									<h2>Actividad. Identificar los tipos de ataques cibernéticos.</h2>
+									<p>
+										<img src="images/Actividades/Actividad - identificar los tipos de ataques cibernéticos.PNG" class="responsive" alt="">
+									</p>
+									<h2>Cómo defenderse de los ataques.</h2>
+									<p>
+										Una organización puede realizar varios pasos para defenderse de diversos ataques. Configure firewalls para descartar cualquier paquete fuera de la red que tenga direcciones que 
+										indican que se originaron dentro de la red. Esta situación no ocurre normalmente, e indica que un delincuente cibernéticos intentó realizar un ataque de suplantación de identidad. <br>
+										Para evitar ataques de DoS y DDoS, asegúrese de que los parches y las actualizaciones sean actuales, distribuya la carga de trabajo en todos los sistemas de servidores y bloquee 
+										los paquetes de Protocolo de mensajería de control de Internet (ICMP) en la frontera. Los dispositivos de red utilizan paquetes ICMP para enviar mensajes de error. 
+										Por ejemplo, el comando ping utiliza paquetes ICMP para verificar que un dispositivo pueda comunicarse con otra en la red. <br>
+										Los sistemas pueden evitar ser víctimas de un ataque de repetición al cifrar el tráfico, proporcionar autenticación criptográfica e incluir una marca de tiempo con cada parte del mensaje. <br>
+										<a href="https://www.theguardian.com/public-leaders-network/2015/oct/14/how-to-stop-cyber-attacks-on-your-organisation" target="_blank" rel="noopener noreferrer">Saber más.</a>
+									</p>
+									<h2>Prueba de laboratorio: detección de amenazas y vulnerabilidades.</h2>
+									<p>
+										<a href="docs/3.3.1.9 Lab - Detecting Threats and Vulnerabilities.pdf" target="_blank" rel="noopener noreferrer"></a>
 									</p>
 								</div>
 							</section>
