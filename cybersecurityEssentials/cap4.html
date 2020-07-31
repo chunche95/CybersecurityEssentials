@@ -141,6 +141,45 @@
 									<p>
 										<img src="images/Actividades/Actividad -  exploración del cifrado de Vigenère.PNG" class="responsive" alt="">
 									</p>
+									<h2>Dos tipos de encriptación.</h2>
+									<p>
+										La encriptación criptográfica puede proporcionar confidencialidad al incorporar diversas herramientas y protocolos. <br>
+										Existen dos enfoques para garantizar la seguridad de los datos al utilizar la encriptación. La primera es proteger el algoritmo. Si la seguridad de un sistema de encriptación depende del secreto del algoritmo, el aspecto más importante es proteger al algoritmo a toda costa. 
+										Cada vez que alguien descubre los detalles del algoritmo, cada parte involucrada debe cambiar el algoritmo. Este enfoque no suena muy seguro o razonable. El segundo enfoque es proteger las claves. Con la criptografía moderna, suelen usarse algoritmos públicos. 
+										Las claves criptográficas garantizan la privacidad de los datos. Las claves criptográficas son contraseñas que forman parte de la información en un algoritmo de encriptación en conjunto con datos que requieren encriptación. <br>
+										Existen dos clases de algoritmos de encriptación:
+										<ul>
+											<li>
+												<strong>Algoritmos simétricos.</strong> Estos algoritmos utilizan la misma clave precompartida, a veces llamada un par de clave secreta, para cifrar y descifrar datos. El emisor y el receptor conocen la clave precompartida antes de que comience cualquier comunicación cifrada. 
+												Como se muestra en la figura, los algoritmos simétricos usan la misma clave para cifrar y descifrar texto no cifrado. Los algoritmos de encriptación que utilizan una clave común son más simples y necesitan menos capacidad informática.
+												<div>
+													<img src="images/Crip.simetrico.PNG" class="responsive" alt="">
+												</div>
+											</li>
+											<li>
+												<strong>Algoritmos asimétricos</strong> Los algoritmos de encriptación asimétrica usan una clave para cifrar los datos y una clave diferente para descifrarlos. Una clave es pública y la otra es privada. En un sistema de cifrado de clave pública, 
+												cualquier persona puede cifrar un mensaje con la clave pública del receptor, y el receptor es el único que puede descifrarlo mediante su clave privada. Las partes intercambian mensajes seguros sin necesidad de utilizar una clave precompartida, 
+												como se muestra en la figura siguiente. Los algoritmos asimétricos son más complejos. Estos algoritmos requieren muchos recursos y son más lentos para ejecutar. 
+												<div>
+													<img src="images/cif.asimetrico.PNG" class="responsive" alt="">
+												</div>
+											</li>
+										</ul>
+									</p>
+									<h2>Proceso de encriptación simétrica</h2>
+									<p>
+										Los algoritmos simétricos utilizan la misma clave precompartida para cifrar y descifrar datos, un método también conocido como encriptación de clave privada. <br>
+										Por ejemplo, Alice y Bob viven en diferentes ubicaciones y desean intercambiar mensajes secretos entre sí a través del sistema de correo. Alice desea enviar un mensaje secreto a Bob. <br>
+										El cifrado de clave privada utiliza un algoritmo simétrico. Como se ilustra por las claves en la figura, Alice y Bob tienen claves idénticas para un único candado. El intercambio de claves sucedió antes de enviar un mensaje privado. 
+										Alice escribe un mensaje privado y lo coloca en una caja pequeña que cierra con el candado. Le envía la caja a Bob. El mensaje está seguro dentro de la caja mientras esta se abre camino a través del sistema de oficina postal. Cuando 
+										Bob recibe la caja, usa la clave para abrir el candado y recuperar el mensaje. Bob puede utilizar la misma caja y el mismo candado para enviar una respuesta secreta a Alice. <br>
+										Si Bob desea hablar con Carol, necesita una nueva clave precompartida para que esa comunicación sea secreta para Alice. Con cuantas más personas Bob desee comunicarse de manera segura, más claves deberá manejar.
+										<div>
+											<img src="images/encript. clave privada.PNG" class="responsive" alt=""> <br>
+											<img src="images/cifrado de flujo.PNG" class="responsive" alt="">
+										</div>
+									</p>
+
 								</div>
 							</section>
 
