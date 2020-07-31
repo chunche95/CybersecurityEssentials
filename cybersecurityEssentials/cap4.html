@@ -175,11 +175,46 @@
 										Bob recibe la caja, usa la clave para abrir el candado y recuperar el mensaje. Bob puede utilizar la misma caja y el mismo candado para enviar una respuesta secreta a Alice. <br>
 										Si Bob desea hablar con Carol, necesita una nueva clave precompartida para que esa comunicación sea secreta para Alice. Con cuantas más personas Bob desee comunicarse de manera segura, más claves deberá manejar.
 										<div>
-											<img src="images/encript. clave privada.PNG" class="responsive" alt=""> <br>
-											<img src="images/cifrado de flujo.PNG" class="responsive" alt="">
+											<img src="images/encript. clave privada.PNG" class="responsive" alt="">
 										</div>
 									</p>
-
+									<h2>Tipos de criptografía.</h2>
+									<p>
+										Los tipos más comunes de criptografía son cifrados por bloques y cifrados pde flujo. Cada método se diferencia en la forma de agrupar bits de datos para cifrarlo.
+										<ul>
+											<li>
+												<b>Cifrado por bloques</b>. <br>
+												<p>
+													Los cifrados por bloques transforman un bloque de texto simple, de longitud fija en un bloque común de texto cifrado de 64 o 128 bits. El tamaño del bloque es la cantidad de datos cifrados en cualquier momento. 
+													Para descifrar este texto cifrado, aplique la transformación inversa al bloque de texto cifrado, utilizando la misma clave secreta. <br>
+													Los cifrados por bloques producen generalmente los datos de salida que son mayores que los datos de entrada, porque el texto cifrado debe ser un múltiplo del tamaño del bloque. 
+													Por ejemplo, el Estándar de cifrado de datos (DES) es un algoritmo simétrico que cifra los bloques en fragmentos de 64 bits mediante una clave de 56 bits. Para lograr esto, el algoritmo de bloque toma un fragmento de datos 
+													por vez, por ejemplo, 8 bytes por fragmento, hasta que todo el bloque está completo. Si hay menos datos de entrada que uno bloque completo, el algoritmo agrega datos artificiales o espacios en blanco, 
+													hasta que utiliza los 64 bits completos, como se muestra en la figura para los 64 bits de la izquierda.
+													<div>
+														<img src="images/cifrado por bloques.PNG" class="responsive" alt="">
+													</div>
+												</p>
+											</li>
+											<li>
+												<b>Cifrado por flujo.</b>
+												<p>
+													A diferencia de los cifrados por bloque, los cifrados de flujo cifran el texto simple un byte o un bit por vez, como se muestra en la figura siguiente. Piense en los cifrados de flujo como el cifrado de bloques con el tamaño de bloque de un bit. 
+													Con un cifrado de flujo, la transformación de estas unidades más pequeñas de texto simple varía, según cuándo se las encuentra durante el proceso de encriptación. Los cifrados de flujo pueden ser mucho más rápidos que los cifrados en bloque, 
+													y no aumentan generalmente el tamaño del mensaje, ya que pueden cifrar un número arbitrario de bits. <br>
+													El A5 es un cifrado de flujo que proporciona privacidad de voz y cifra las comunicaciones de telefonía celular. También es posible utilizar el DES en el modo de cifrado de flujo. <br>
+													Los sistemas criptográficos complejos pueden combinar el bloque y el flujo en el mismo proceso.
+													<div>
+														<img src="images/cifrado de flujo.PNG" class="responsive" alt="">
+													</div>
+												</p>
+											</li>
+										</ul>
+									</p>
+									<h2>Algoritmos de encriptación simétrica.</h2>
+									<p>
+										
+									</p>
 								</div>
 							</section>
 
