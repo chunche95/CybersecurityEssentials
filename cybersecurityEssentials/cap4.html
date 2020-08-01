@@ -25,7 +25,7 @@
 					<ul>
 						<li><a href="#one" class="active">About &#x1F463;</a></li>
 						<li><a href="#two">El arte de proteger los secretos. &#x1F510;</a></li>
-						<li><a href="#three">Capitulemos &#x1F4DA;</a></li>
+						<li><a href="#three">Recapitulemos &#x1F4DA;</a></li>
 						<li><a href="#four">Contact &#x1F4F2;</a></li>
 					</ul>
 				</nav>
@@ -231,7 +231,116 @@
 										El AES es un algoritmo sólido que utiliza claves de mayor longitud. El AES es más rápido que DES y 3DES, lo que brinda una solución para las aplicaciones de software así como también el uso de hardware en los firewalls y los routers. <br><br>
 										Otros cifrados por bloque incluyen Skipjack (desarrollados por la National Security Agency - NSA), Blowfish y Twofish.
 									</p>
-
+									<h2>Actividad. Uso de la encriptación simétrica.</h2>
+									<p>
+										<a href="http://des.online-domain-tools.com" target="_blank" rel="noopener noreferrer"><video src="videos/des.online-domain-tools.com.mp4" class="responsive" loop muted autoplay></video></a>
+										<div>
+											<img src="images/Actividades/actividad - uso de la encriptación simétrica.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>El proceso de encriptación asimétrica</h2>
+									<p>
+										La encriptación asimétrica, también denominada cifrado de clave pública, utiliza una clave para la encriptación que es diferente de la clave utilizada para el descifrado. Un delincuente no puede calcular la clave de descifrado según 
+										el conocimiento de la clave de cifrado, y viceversa, en una cantidad de tiempo razonable. <br>
+										Si Alice y Bob intercambian un mensaje secreto mediante la encriptación de clave pública, utilizan un algoritmo asimétrico. Esta vez, Bob y Alice no intercambian claves antes de enviar los mensajes secretos. 
+										En cambio, Bob y Alice poseen un candado separado con las claves correspondientes separadas. Para que Alice envíe un mensaje privado de Bob, primero debía ponerse en contacto con él y solicitarle que le envíe su candado abierto. 
+										Bob envía el candado pero mantiene la clave. Cuando Alice recibe el candado, escribe su mensaje secreto y lo coloca en una caja pequeña. También coloca su candado abierto en la caja pero mantiene la clave. Luego cierra la caja con el candado de Bob. 
+										Cuando Alice cierra la caja, ya no puede ingresar ya que no tiene una clave para ese candado. Le envía la caja a Bob y, como esta viaja a través del sistema de correo, nadie puede abrirlo. Cuando Bob recibe la caja, puede usar su clave para abrir la 
+										caja y recuperar el mensaje de Alice. Para enviar una respuesta segura, Bob pone su mensaje secreto en la caja, junto con su candado abierto y cierra la caja con el candado de Alice. Bob envía por correo la caja asegurada a Alice. <br>
+										Por ejemplo, en la figura 1, Alice solicita y obtiene la clave pública de Bob. En la figura 2, Alice utiliza la clave pública de Bob para cifrar un mensaje con un algoritmo acordado. Alice envía el mensaje cifrado a Bob y este luego usa su clave privada 
+										para descifrar el mensaje, como se muestra en la figura 3. 
+										<div>
+											<img src="images/clave publica +  clave privada = confidencialidad.PNG" class="responsive" alt=""><p>Figura 1.</p>
+										</div><div>
+											<img src="images/encriptacion de clave publica.PNG" class="responsive2" alt=""><p>Figura 2.</p>
+										</div><div>
+											<img src="images/encriptacion llave publica.PNG" class="responsive2" alt=""><p>Figura 3.</p>
+										</div>
+									</p>
+									<h2>Algoritmo de encriptación asimétrica</h2>
+									<p>
+											Los algoritmos asimétricos utilizan fórmulas que cualquier persona puede buscar. El par de claves no relacionadas es lo que hace que estos algoritmos sean seguros. Los algoritmos asimétricos incluyen los siguientes: <br>
+											<b>RSA (Rivest-Shamir-Adleman):</b> utiliza el producto de dos números primos muy grandes con una longitud igual de entre 100 y 200 dígitos. Los navegadores utilizan RSA para establecer una conexión segura. <br>
+											<b>Diffie-Hellman:</b> proporciona un método de intercambio electrónico para compartir la clave secreta. Los protocolos seguros, como Secure Sockets Layer (SSL), Transport Layer Security (TLS), Shell seguro (SSH) y Protocolo de seguridad de Internet (IPsec), utilizan Diffie-Hellman. <br>
+											<b>ElGamal:</b> utiliza el estándar del gobierno de EE. UU. para las firmas digitales. Este algoritmo es gratuito ya que nadie posee la patente. <br>
+											<b>Criptografía de curva elíptica (ECC):</b> usa curvas elípticas como parte del algoritmo. En EE. UU., la Agencia de Seguridad Nacional utiliza la ECC para la generación de firma digital y el intercambio de claves.
+									</p>
+									<h2>Actividad. Uso de la encriptación asimétrica</h2>
+									<p>
+										<img src="images/Actividades/actividad - uso de la encriptación simétrica.PNG" class="responsive" alt=""> <br>
+										<img src="images/Actividades/actividad - uso de la encriptación simétrica - clave publica de bob.PNG.PNG" class="responsive" alt=""> <br>
+										<img src="images/Actividades/actividad - uso de la encriptación simétrica - clave publica de jane.PNG.PNG" class="responsive" alt=""> <br>
+										<img src="images/Actividades/actividad - uso de la encriptación simétrica - clave privada de jane.PNG.PNG" class="responsive" alt=""> <br>
+									</p>
+									<h2>Administración de claves</h2>
+									<p>
+										La administración de claves incluye generación, intercambio, almacenamiento, uso y reemplazo de claves utilizadas en un algoritmo de encriptación. <br>
+										La administración de claves es la parte más difícil del diseño de un sistema criptográfico. Muchos sistemas criptográficos han fallado por errores en los procedimientos de administración de claves. En la práctica, la mayoría de los ataques a los sistemas criptográficos 
+										se realizan en el nivel de administración de claves, en lugar del algoritmo criptográfico en sí mismo. <br>
+										Como se muestra en la figura, existen varias características esenciales de administración de claves que deben considerarse. <br>
+										Dos términos usados para describir las claves son:
+										<ul>
+											<li>
+												<b>
+													Longitud de las claves.
+												</b>
+												También denominado tamaño de la clave, es la medida en bits.
+											</li>
+											<li>
+												<b>
+													Espacio de clave.
+												</b>
+												Es la cantidad de intentos que una longitud de clave específica puede generar.
+											</li>
+										</ul>
+										<div>
+											<video src="videos/Administracin-de-claves.mp4" class="responsive" autoplay muted loop></video>
+										</div>
+										A medida que aumenta la longitud de la clave, el espacio aumenta de manera exponencial. El espacio de clave de un algoritmo es el conjunto  de todos los valores posibles de la clave. Las claves más larfas son más seguras, sin embargo, también requieren más recursos. 
+										Casi todos los algoritmos tienen algunas claves débiles en su espacio de clave que permiten a un delincuente descifrar las claves a través de un acceso directo.
+									</p>
+									<h2>Comparación de los tipos de encriptación.</h2>
+									<p>
+										Es importante comprender las diferencias entre los métodos de encriptación simétricos y asimétricos. Los sistemas de encriptación simétrica son más eficientes y pueden manejar más datos. Sin embargo, la administración de claves con sistemas de encriptación 
+										simétrica es más problemática y más difícil de manejar. La criptografía asimétrica es más eficiente en la protección de la confidencialidad de pequeñas cantidades de datos y su tamaño y velocidad permiten que sea más segura para tareas como el intercambio 
+										de claves electrónicas que es una pequeña cantidad de datos en lugar de cifrar grandes bloques de datos. <br>
+										Mantener la confidencialidad es importante para los datos almacenados y los datos en movimiento. En ambos casos, la encriptación simétrica resulta favorecida debido a su velocidad y la simplicidad del algoritmo. Algunos algoritmos asimétricos pueden aumentar 
+										considerablemente el tamaño del objeto cifrado. Por lo tanto, en el caso de los datos en movimiento, use la criptografía de clave pública para intercambiar la clave secreta y luego la criptografía simétrica para garantizar la confidencialidad de los datos enviados.
+										<div>
+											<img src="images/algoritmos de encriptación simétrica y asimétrica.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Aplicaciones</h2>
+									<p>
+										Existen numerosas aplicaciones para los algoritmos simétricos y asimétricos. <br>
+										El token de generación de contraseñas de única vez es un dispositivo de hardware que utiliza la criptografía para generar una contraseña única. Una contraseña de única vez es una cadena de caracteres numérica o alfanumérica generada automáticamente que autentica 
+										al usuario para una transacción de solo una sesión. El número cambia cada 30 segundos aproximadamente. La contraseña de la sesión aparece en una pantalla y el usuario introduce la contraseña. <br>
+										La industria de pago electrónico utiliza 3DES. Los sistemas operativos utilizan DES para proteger los archivos de usuarios y los datos del sistema con contraseñas. La mayoría de los sistemas de archivos de cifrado, como NTFS, utilizan AES. <br>
+										Cuatro protocolos utilizan algoritmos de clave asimétrica:
+										<ul>
+											<li>												
+												Intercambio de claves por Internet (IKE), que es un componente fundamental de las redes privadas virtuales (VPN) de IPsec.
+											</li>
+											<li>
+												Secure Sockets Layer (SSL), un medio para implementar la criptografía en un navegador web.
+											</li>
+											<li>
+												Shell seguro (SSH), un protocolo que proporciona una conexión de acceso remoto segura a un dispositivo de red.
+											</li>
+											<li>
+												Pretty Good Privacy (PGP), un programa informático que proporciona privacidad y autenticación criptográfica para mejorar la seguridad de las comunicaciones por correo electrónico.
+											</li>
+										</ul>
+										<div>
+											<img src="images/RED PRIVADA VIRTUAL.PNG" class="responsive" alt="">
+										</div>
+										Una VPN es una red privada que utiliza una red pública, generalmente Internet, para crear un canal de comunicación seguro. Una VPN conecta dos terminales como dos oficinas remotas mediante Internet para crear la conexión. <br>
+										Las VPN utilizan IPsec. IPsec es un conjunto de protocolos desarrollado para lograr servicios seguros en las redes. Los servicios de IPSec permiten la autenticación, la integridad, el control de acceso y la confidencialidad. 
+										Con IPsec, los sitios remotos pueden intercambiar información cifrada y verificada. <br>
+										Los datos en uso son una preocupación cada vez mayor para muchas organizaciones. Cuando se encuentran en uso, los datos ya no tienen cualquier protección porque el usuario necesita abrir y cambiar los datos. 
+										La memoria del sistema contiene los datos en uso y puede contener los datos confidenciales como la clave de cifrado. <br>
+										Si los delincuentes comprometen los datos en uso, tendrán acceso a los datos almacenados y a los datos en movimiento.
+									</p>
 								</div>
 							</section>
 
