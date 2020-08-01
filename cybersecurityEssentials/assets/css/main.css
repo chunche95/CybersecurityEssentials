@@ -3131,6 +3131,10 @@ input, select, textarea {
 				height: 12em;
 			}
 
+			.image.fit {
+				display: block;
+				width: 100%;
+			}
 		/* Section/Article */
 
 			header br {
