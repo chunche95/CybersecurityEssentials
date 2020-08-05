@@ -467,6 +467,34 @@
 										nunca obtenga acceso a un archivo catalogado como «de máxima confidencialidad». De manera similar, un usuario (sujeto) con permiso de acceso «de máxima confidencialidad» no puede cambiar la clasificación de un archivo (objeto) 
 										catalogado como «de máxima confidencialidas» a «secreto». Además, un usuario con permiso de «máxima confidencialidad» no puede enviar un archivo de máxima confidencialidad a un usuario que solo tiene permiso para ver información secreta.
 									</p>
+									<h2>Control de acceso discrecional</h2>
+									<p>
+										El propietario de un objeto determina si permite el acceso a un objeto con control de acceso discrecional (DAC). DAC otorga o restringe el acceso de objeto determinado por el propietario del objeto. Como su nombre lo indica, 
+										los controles son discrecionales porque el propietario de un objeto con ciertos permisos de acceso pueden transferir esos permisos a otro sujeto. <br>
+										En sistemas que emplean controles de acceso discrecionales, el propietario de un objeto puede decidir qué sujetos pueden acceder al objeto y qué acceso específico pueden tener. Un método común para lograr esto es con permisos, 
+										como se muestra en la figura. El propietario de un archivo puede especificar qué permisos (lectura/escritura/ejecución) pueden tener otros usuarios. <br>
+										Las listas de control de acceso son otros mecanismos comunes utilizados para implementar el control de acceso discrecional. Un lista de control de acceso utiliza reglas para determinar qué tráfico puede ingresar o salir de una red.
+										<div>
+											<img src="images/control de acceso discrecional.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Control de acceso basado en roles.</h2>
+									<p>
+										El control de acceso basado en roles (RBAC) depende del rol del sujeto. Los roles son las funciones de trabajo en una organización. Los roles específicos requieren permisos para realizar determinadas operaciones. Los usuarios adquieren permisos a través de su función. <br>
+										El RBAC puede trabajar junto con DAC o MAC al hacer cumplir las políticas de cualquiera de ellos. El RBAC ayuda a implementar la administración de seguridad en grandes organizaciones con cientos de usuarios y miles de permisos posibles. 
+										Las organizaciones aceptan ampliamente el uso de RBAC para administrar permisos en un sistema o una aplicación, como una mejor práctica.
+									</p>
+									<h2>Control de acceso basado en reglas.</h2>
+									<p>
+										El control de acceso basado en reglas utiliza listas de control de acceso (ACL) para ayudar a determinar si otorga acceso o no. Una serie de reglas se incluye en la ACL, como se muestra en la figura. 
+										Establecer si se debe otorgar acceso depende de estas reglas. Un ejemplo de esa regla es una que indica que ningún empleado puede acceder al archivo de nómina después de horario o los fines de semana. <br>
+										Como ocurre con el MAC, los usuarios no pueden cambiar las reglas de acceso. Las organizaciones pueden combinar el control de acceso basado en reglas con otras estrategias para implementar las restricciones de acceso. 
+										Por ejemplo, los métodos de MAC pueden utilizar un enfoque basado en reglas para la implementación. <br>
+										<div>
+											<img src="images/control de acceso basdo en reglas.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									
 								</div>
 							</section>
 
