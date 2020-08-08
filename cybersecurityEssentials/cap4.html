@@ -462,10 +462,10 @@
 										Una regla de autorización se aplica si un sujeto puede acceder al objeto o no. <br>
 										Las organizaciones utilizan el MAC donde se encuentran diferentes niveles de clasificaciones de seguridad. Cada objeto tiene una etiqueta y cada sujeto tiene una espacio libre. Un sistema MAC restringe a un sujeto según la 
 										clasificación de seguridad del objeto y la etiqueta anexada al usuario. <br>
-										Por ejemplo, tome las clasificaciones de seguridad militar denominadas «secreto» y «máxima confidencialidad». Si un archivo (un objeto) se considera de máxima confidencialidad, es un archivo que se clasifica (etiqueta) como «máxima confidencialidad». 
-										Las únicas personas (sujetos) que pueden ver el archivo (objeto) son aquellas con un permiso de «maxima confidencialidad». El mecanismo de control de acceso debe garantizar que una persona (sujeto) con permiso «Secreto» solamente, 
-										nunca obtenga acceso a un archivo catalogado como «de máxima confidencialidad». De manera similar, un usuario (sujeto) con permiso de acceso «de máxima confidencialidad» no puede cambiar la clasificación de un archivo (objeto) 
-										catalogado como «de máxima confidencialidas» a «secreto». Además, un usuario con permiso de «máxima confidencialidad» no puede enviar un archivo de máxima confidencialidad a un usuario que solo tiene permiso para ver información secreta.
+										Por ejemplo, tome las clasificaciones de seguridad militar denominadas "secreto" y "máxima confidencialidad". Si un archivo (un objeto) se considera de máxima confidencialidad, es un archivo que se clasifica (etiqueta) como "máxima confidencialidad". 
+										Las únicas personas (sujetos) que pueden ver el archivo (objeto) son aquellas con un permiso de "maxima confidencialidad". El mecanismo de control de acceso debe garantizar que una persona (sujeto) con permiso "Secreto" solamente, 
+										nunca obtenga acceso a un archivo catalogado como "de máxima confidencialidad". De manera similar, un usuario (sujeto) con permiso de acceso "de máxima confidencialidad" no puede cambiar la clasificación de un archivo (objeto) 
+										catalogado como "de máxima confidencialidas" a "secreto". Además, un usuario con permiso de "máxima confidencialidad" no puede enviar un archivo de máxima confidencialidad a un usuario que solo tiene permiso para ver información secreta.
 									</p>
 									<h2>Control de acceso discrecional</h2>
 									<p>
@@ -669,6 +669,66 @@
 												La anulación aplica un valor a un campo específico, lo cual evita completamente la visibilidad de los datos.
 											</li>
 										</ul>
+									</p>
+									<h2>¿Qué es ls esteganografía?</h2>
+									<p>
+										La esteganografía oculta datos (el mensaje) en otro archivo, como un archivo de texto gráfico, de audio u otro archivo de texto. La ventaja de la esteganografía con respecto a la criptografía es que el mensaje secreto no atrae ninguna atención especial. Nadie sabría nunca que una imagen contenía realmente un mensaje secreto al ver el archivo en formato electrónico o impreso.
+										Existen varios componentes involucrados en el ocultamiento de datos: Primero, existen los datos integrados, que es el mensaje secreto. El texto cubierto (imagen cubierta o audio cubierto) oculta los datos integrados y genera un estegotexto (o una estegoimagen o estegoaudio). Una estegoclave controla el proceso de ocultamiento.
+									</p>
+									<h2>Técnicas de esteganografía</h2>
+									<p>
+										El enfoque utilizado para integrar los datos en una imagen cubierta utiliza los bits menos significativos (LSB). Este método utiliza bits de cada píxel en la imagen. Un píxel es la unidad básica de color programable en una imagen de computadora. El color específico de un píxel es una combinación de tres colores: rojo, verde y azul (RGB). Tres bytes de datos especifican 
+										el color de un píxel (un byte para cada color). Ocho bits conforman un byte. El sistema de colores de 24 bits utiliza los tres bytes. LSB utiliza un bit de cada uno de los componentes rojo, verde y azul. Cada píxel puede ahorrar 3 bits. <br>
+										La figura muestra tres píxeles de una imagen de 24 bits. Una de las letras del mensaje secreto es la letra T y la inserción del caracter T solo cambia dos bits del color. El ojo humano no puede reconocer los cambios realizados a los bits menos significativos. El resultado es un carácter oculto. 
+										<div>
+											<img src="images/uso del  bit menos significativo.PNG" class="responsive" alt="">
+										</div>
+										En promedio, menos de la mitad de los bits de una imagen deberá cambiar para ocultar un mensaje secreto de manera eficaz.
+									</p>
+									<h2>Práctica de laboratorio: uso de la esteganografía</h2>
+									<p>
+										<a href="docs/4.3.2.3 Lab - Using Steganography.pdf" target="_blank" rel="noopener noreferrer">Práctica de laboratorio: uso de la esteganografía.</a>
+										<div>
+											<img src="images/Actividades/practica de laboratorio - uso de la esteganografía.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Esteganografía social</h2>
+									<p>
+										La esteganografía social oculta información a plena vista al crear un mensaje que algunos pueden leer de determinada manera para recibir el mensaje. Otras personas que lo ven de manera normal, no verán el mensaje. Los adolescente utilizan esta táctica en los medios sociales para comunicarse con sus amigos más cercanos mientras que otros, como sus padres, 
+										desconocen el significado real del mensaje. Por ejemplo, la frase "vamos al cine" puede significar "vamos a la playa". <br>
+										Las personas en los países que censuran los medios también utilizan la esteganografía social para mandar sus mensajes al deletrear las palabras de manera incorrecta a propósito o hacer referencias imprecisas. En efecto, se comunican con diferentes audiencias de manera simultánea.
+									</p>
+									<h2>Detección</h2>
+									<p>
+										El estegoanálisis es el descubrimiento de que existe información oculta. El objetivo del estegoanálisis es detectar información oculta. <br>
+										Los patrones de la estegoimagen generan sospecha. Por ejemplo, un disco puede tener áreas sin utilizar que ocultan información. Las utilidades de análisis de disco pueden informar sobre la información oculta en clústeres sin utilizar de dispositivos de almacenamiento. Los filtros pueden capturar los paquetes de datos que contienen información oculta en los encabezados de paquete. 
+										Ambos métodos usan las firmas de esteganografía. <br>
+										Al comparar una imagen original con la estegoimagen, un analista puede recoger patrones repetitivos de manera visual.
+									</p>
+									<h2>Ofuscación</h2>
+									<p>
+										La ofuscación de datos es el uso y la práctica de las técnicas de esteganografía y enmascaramiento de los datos en el área de ciberseguridad y la profesión de inteligencia cibernética: La ofuscación es el arte de hacer que el mensaje sea confuso, ambiguo o más difícil comprender. Un sistema puede codificar mensajes deliberadamente para evitar el acceso no autorizado a la información confidencial.
+									</p>
+									<h2>Aplicaciones</h2>
+									<p>
+										La marca el agua de software protege al software del acceso o la modificación no autorizada. La marca de agua de software inserta un mensaje secreto en el programa como prueba de propiedad. El mensaje secreto es la marca de agua del software. Si alguien intenta eliminar la marca de agua, el resultado es un código no funcional. <br>
+										La ofuscación de software traduce el software a una versión equivalente a la original, pero a una solución que es más difícil de analizar para los atacantes. Si se intenta revertir la ingeniería del software esto puede brindar resultados incomprensibles de un software que todavía funciona.
+									</p>
+									<h2>Packet Tracer: Configuración del modelo de transporte de VPN</h2>
+									<p>
+										<a href="docs/4.3.3.3 Packet Tracer - Configuring VPN Transport Mode.pdf" target="_blank" rel="noopener noreferrer">PT: Configuración del modo de transporte de VPN. (pdf)</a> <br>
+										<a href="docs/4.3.3.3 Packet Tracer - Configuring VPN Transport Mode.pka" target="_blank" rel="noopener noreferrer">PT: Configuración del modo de transporte de VPN. (pka)</a>
+									</p>
+									<h2>Packet Tracer: Configuración del modo de túneles VPN.</h2>
+									<p>
+										<a href="docs/4.3.3.4 Packet Tracer - Configuring VPN Tunnel Mode.pdf" target="_blank" rel="noopener noreferrer">PT: Configuración del modo de túneles VPN. (pdf)</a> <br>
+										<a href="docs/4.3.3.4 Packet Tracer - Configuring VPN Tunnel Mode.pka" target="_blank" rel="noopener noreferrer">PT: Configuración del modo de túneles VPN. (pka)</a>
+									</p>
+									<h2>Capítulo 4. El arte de proteger los secretos.</h2>
+									<p>
+										En este capítulo, se analizaron los principios de criptología utilizados para comunicaciones seguras. En el capítulo se explicaron los algoritmos de encriptación simétrica y asimétrica, se compararon los dos algoritmos y se proporcionaron ejemplos de su uso. <br>
+										En el capítulo se explicó cómo el control de acceso evita el acceso no autorizado a un edificio, a una sala, a un sistema o a un archivo mediante la identificación, autenticación, autorización y responsabilidad. Además, en el capítulo también se describieron los diversos modelos de control de acceso y los tipos de control de acceso. <br>
+										El capítulo concluyó con el análisis de las diversas maneras en que los usuarios enmascaran los datos. La ofuscación de datos y la esteganografía son dos técnicas utilizadas para lograr el enmascaramiento de datos.
 									</p>
 								</div>
 							</section>
