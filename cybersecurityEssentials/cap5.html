@@ -354,7 +354,36 @@
 									<p>
 										<a href="docs/5.2.2.4 Lab - Using Digital Signatures.pdf">Práctica de laboratorio. Uso de firmas digitales.</a>
 									</p>
-									
+									<h2>¿Qué es un certificado digital?</h2>
+									<p>
+										Un certificado digital es equivalente a un pasaporte electrónico. Permiten a los usuarios, hosts y organizaciones intercambiar información de manera segura a través de Internet. Específicamente, un certificado digital autentica y verifica que los usuarios que envían un mensaje sean quienes afirman ser. Los certificados digitales 
+										también pueden proporcionar confidencialidad para el receptor con los medios para cifrar una respuesta. <br>
+										<div>
+											<img src="images/certificado digital.PNG" class="responsive" alt="">
+										</div>
+										Los certificados digitales son similares a los certificados físicos. Por ejemplo, el certificado Asociado en redes con certificación de Cisco (CCNA-S) en papel, en la Figura 1 identifica a las personas, la autoridad del certificado (quién autorizó el certificado) y durante cuánto tiempo el certificado es válido. Observe de qué 
+										manera el certificado digital en la Figura 2 también identifica los elementos similares.
+										<div>
+											<img src="images/info del certificado digital.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Uso de certificados digitales.</h2>
+									<p>
+										Para poder comprender cómo usar un certificado digital, consulte la Figura 1. En este escenario, Bob confirma un pedido con Alicia. El servidor web de Alicia utiliza un certificado digital para garantizar una transacción segura.
+										<ul>
+											<ol> Paso 1: Bob examina el sitio web de Alicia. Un navegador designa una conexión segura al mostrar un icono de bloqueo en la barra de estado de seguridad.</ol>
+											<ol> Paso 2: El servidor web de Alicia envía un certificado digital al navegador de Bob.</ol>
+											<ol> Paso 3: El navegador de Bob comprueba el certificado almacenado en los ajustes del navegador. Solo los certificados confiables permiten que la transacción siga adelante.</ol>
+											<ol> Paso 4: El navegador web de Bob crea una clave única de sesión por única vez.</ol>
+											<ol> Paso 5: El navegador de Bob utiliza la clave pública del servidor web en su certificado para cifrar la sesión.</ol>
+											<ol> Paso 6: El resultado es que solo el servidor web de Alicia pueda leer las transacciones enviadas desde el navegador de Bob.</ol>
+										</ul>
+										<img src="images/uso de certificados digitales.PNG" class="responsive" alt="">
+									</p>
+									<h2>¿Qué es una autoridad de certificación?</h2>
+									<p>
+										
+									</p>
 								</div>
 							</section>
 
