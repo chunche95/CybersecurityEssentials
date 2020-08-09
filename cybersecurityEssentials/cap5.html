@@ -321,7 +321,40 @@
 									<p>
 										La firma de un hash en lugar del documento completo proporciona eficiencia, compatibilidad e integridad. Es probable que las organizaciones deseen reemplazar los documentos impresos y las firmas de tinta con una solución que garantice que el documento electrónico cumple con todos los requisitos legales. <br>
 										Las siguientes dos situaciones proporcionan ejemplos de uso de firmas digitales:
+										<ul>
+											<li>
+												<b>Firma de código</b>.  Se utiliza para verificar la integridad de los archivos ejecutables descargados del sitio web de un proveedor. La firma de códigos también utiliza certificados digitales firmados para autenticar y verificar la identidad del sitio.
+												<div>
+													<img src="images/detalles de la firma digital.PNG" class="responsive" alt="">
+												</div>
+											</li>
+											<li>
+												<b>Certificados digitales</b>. Se utilizan para verificar la identidad de una organización o de una persona para autenticar el sitio web de un proveedor y para establecer una conexión cifrada a fin de intercambiar datos confidenciales.
+												<div>
+													<img src="images/informacion del certificado digital.PNG" class="responsive" alt="">
+												</div>
+											</li> 
+										</ul>
 									</p>
+									<h2>Comparación de los algoritmos de firma digital.</h2>
+									<p>
+										Los tres algoritmos comunes de firma digital son el Algoritmo de firma digital (DSA), Rivest-Shamir-Adleman (RSA y el Algoritmo de firma digital de curva elíptica (ECDSA). Los tres generan y verifican firmas digitales. Estos algoritmos dependen de las técnicas de cifrado asimétrico y de clave pública. Las firmas digitales requieren dos operaciones:
+										<ul>
+											<ol>1. Generación de claves.</ol>
+											<ol>2. Verificación de claves.</ol>
+										</ul>
+										Ambas operaciones requieren la encriptación y el descifrado de clave. <br>
+										El DSA utiliza la factorización de números grandes. Los gobiernos utilizan el DSA para las firmas, a fin de crear firmas digitales. El DSA no se extiende más allá de la firma del mensaje. <br>
+										El RSA es el algoritmo más común de la criptografía de clave pública en la actualidad. El RSA se denomina así por las personas que lo crearon en 1977: Ron Rivest, Adi Shamir, Adi Shamir y Leonard Adleman. El RSA depende del cifrado asimétrico. El RSA cubre la firma y también cifra el contenido del mensaje. <br>
+										El DSA es más rápido que el RSA como un servicio de firma de un documento digital. El RSA es el más adecuado para las aplicaciones que requieren la firma y la verificación de documentos electrónicos y encriptación de mensaje. <br>
+										Al igual que la mayoría de las áreas de la criptografía, el algoritmo RSA se basa en dos principios matemáticos; factorización de módulos y de números primos. <a href="https://www.youtube.com/watch?v=wXB-V_Keiu8" target="_blank" rel="noopener noreferrer">Cómo RSA utiliza la factorización de módulos y de números primos.</a><br>
+										ECDSA es el algoritmo de firma digital más nuevo que está reemplazando gradualmente a RSA. La ventaja de este nuevo algoritmo es que puede utilizar tamaños de clave mucho más pequeños para la misma seguridad y requiere menos cómputo que RSA.
+									</p>
+									<h2>Práctica de laboratorio. Uso de firmas digitales.</h2>
+									<p>
+										<a href="docs/5.2.2.4 Lab - Using Digital Signatures.pdf">Práctica de laboratorio. Uso de firmas digitales.</a>
+									</p>
+									
 								</div>
 							</section>
 
