@@ -54,51 +54,66 @@
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>El panorama de la ciberseguridad</h2>
+										<h2>El arte de garantizar la integridad</h2>
 									</header>
-									<p>	
-										Los riesgos y las amenazas de ciberseguridad siempre están presentes en nuestro mundo. La infraestructura de redes e Internet son cada vez más vulnerables a una amplia variedad de ataques físicos y cibernéticos. Los delincuentes cibernéticos sofisticados, así como las naciones, aprovechan estas vulnerabilidades para robar información y dinero.
-										Nuestras redes son particularmente difíciles de asegurar por varios motivos:
-											<ul>
-												<li>Las redes están cada vez más integradas y son cada vez más complejas.</li>
-												<li>Las redes están conectadas a dispositivos físicos.</li>
-												<li>Los delincuentes cibernéticos pueden tener acceso a las redes desde cualquier lugar del mundo.</li>
-											</ul>
-										En la fuerza laboral actual, existe una escasez de personas capacitadas en el campo de la ciberseguridad. Aquí se presentan algunas de las especialidades que puede tener en cuenta para su carrera profesional:
-											<ul>
-												<li>Especialista en ciberseguridad</li>
-												<li>Experto forense en ciberseguridad</li>
-												<li>Experto en seguridad de la información</li>
-												<li>Hacker ético</li>
-											</ul>
-										Todos estos roles pueden ser parte de su trabajo en el campo emocionante, cambiante y de alta demanda de la ciberseguridad. Los estudiantes que finalicen el curso Cibersecurity Essentials están preparados para continuar su formación en cursos de seguridad más avanzados.
+									<p>	 
+										La integridad garantiza que nada ni nadie modifique los datos y que estos sean confiables durante su ciclo de vida completo. La integridad de los datos es un componente fundamental para el diseño, la implementación y el uso de cualquier sistema que almacene, procese o transmita datos.
+										Este capítulo comineza analizando los tipos de controles de integridad de datos utilizados, por ejemplo los algortimos de hash, la técnica de 'salting' y el código de autenticación de mensajes de hash con clave (HMAC). El uso de firmas y certificados digitales incorpora los controles de 
+										integridad de datospara proporcionar a los usuarios una manera de verificar la autenticación de mensajes y documentos. El capítulo finaliza con un análisis de las aplicaciones de integridad de la base de datos. Tener un sistema de integridad de datos bien controlado y 
+										bien definido permite aumentar la estabilidad, el rendimineto y la capacidad de mantenimineto de un sistema de base de datos.
 									</p>
-									<h2>Una comunidad global</h2>
-									<p>
-										Cuando participa en Networking Academy, se suma a una comunidad global conectada por tecnologías y objetivos en común. En el programa, participan escuelas, institutos de enseñanza superior, universidades y otras entidades en más de 160 países. Clic <a href="https://www.youtube.com/watch?v=ajRgZaNLC1A" target="_blank" rel="noopener noreferrer">Aquí</a> para ver un vídeo 
-										sobre cómo Cisco Networking Academy está cambiando el mundo. <br>
-										Busque el sitio oficial de Cisco Networking Academy en Facebook&copy; y LinkedIn&copy;. En el sitio de Facebook, puede encontrarse e interactuar con otros estudiantes de Networking Academy de todo el mundo. El sitio de LinkedIn de Cisco Networking Academy lo conecta con ofertas de empleo, y puede ver la manera en que otras personas comunican sus aptitudes con eficacia.
-									</p>
-									<h2>Más que solo información</h2>
-									<p>									
-										El entorno de aprendizaje de netacad.com es una parte importante de la experiencia general del curso para los estudiantes e instructores de Networking Academy. Este material del curso en línea incluye el texto del curso y medios interactivos relacionados, laboratorios en papel y muchos tipos diferentes de cuestionarios. Este material proporciona comentarios pertinentes para 
-										ayudarlo a evaluar su progreso a lo largo del curso.  <br>
-										El material de este curso se presenta mediante una amplia variedad de tecnologías como texto, gráficos, voz, video e interacciones enriquecedoras. Estas tecnologías ayudan a facilitar la manera en que las personas trabajan, viven, juegan y aprenden. <br>
-										La red e Internet afectan a las personas de distintas maneras en las distintas partes del mundo. Si bien trabajamos con instructores de todo el mundo para crear este material, es importante que trabaje con su instructor y sus compañeros de curso para asegurarse de que el contenido del curso se aplique a su situación local.
-									</p>
-									<img src="images/la practica hace al maestro.PNG" class="responsive" alt="">
-									<h2></h2>
 								</div>
 							</section>
 
 						<!-- Two -->
 							<section id="two">
 								<div class="container">
-									<h3>La ciberseguridad, un mundo de paladines, héroes y delincuentes.</h3>
+									<h2>¿Qué es un hash?</h2>
 									<p>
-										Muchos de los hackers originales del mundo eran aficionados, programadores y estudiantes de informática durante los años 60. Originalmente, el término <b>hacker</b> describió a las personas con habilidades de programación avanzada. Los hackers utilizan estas 
-										habilidades de programación para probar los límites y las capacidades de los primeros sistemas. Estos primeros hackers también estaban involucrados en el desarrollo de los primeros juegos de computadora. Muchos de estos juegos incluían paladines y destrezas. <br>
-										A medida que la cultura de hacking evolucionaba, incorporó el léxico de estos juegos en la cultura en sí.
+										Los usuarios deben saber que sus datos permanecen sin cambios mientras se encuentran almacenados o en tránsito. El hash es una herramienta que garantiza la integridad de datos al tomar los datos binarios (el mensaje) y generar una representación de longitud fija llamada valor hash o compendio del mensaje, como se muestra en la figura. 
+										<div>
+											<img src="images/creacion de un hash.PNG" class="responsive" alt="">
+										</div>
+										La herramienta de hash utiliza una función criptográfica de hash para verificar y proteger la integridad de los datos. También puede verificar la autenticación. Las funciones de hash reemplazan la contraseña de texto no cifrado o las claves de encriptación porque las funciones de hash son funciones unidireccionales. 
+										Esto significa, que si se realiza el hash de una contraseña con un algoritmo de hash específico, siempre dará como resultado la misma compendio de hash. Se le considera unidireccional porque con funciones de hash, es informáticamente inviable que dos conjuntos diferentes de datos tengan la misma compendio o el mismo resultado de hash. <br>
+										Cada vez que se cambian o se modifican los datos, el valor hash también cambia. Debido a esto, los valores hash criptográficos se conocen a menudos como huellas dactilares digitales. Pueden detectar archivos de datos duplicados, cambios en las versiones de los archivos y aplicaciones similares. 
+										Estos valores protegen de un cambio accidental o intencional a los datos y el daño de datos accidental. El hash también es muy eficaz. Un archivo grande o el contenido de toda una unidad de disco genera un valor hash con el mismo tamaño.
+									</p>
+									<h2>Propiedades de hash</h2>
+									<p>
+										El hash es una función matemática unidireccional que es relativamente fácil de computar, pero es mucho más difícil de revertir. El café molido es una buena analogía de una función unidireccional. Es fácil moler los granos de café, pero es casi imposible volver a unir todas las partes minúsculas para reconstruir los granos originales.
+										Una función de hash criptográfica tiene las siguientes propiedades:
+										<ul>
+											<li>La entrada puede ser de cualquier longitud</li>
+											<li>La salida tiene una longitud fija</li>
+											<li>La función de hash es unidireccional y es irreversible</li>
+											<li>Dos valores de entrada distintos casi nunca darán como resultado distintos valores de hash</li>
+										</ul>
+										<div>
+											<img src="images/propiedades de unhash.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Algoritmos de hash</h2>
+									<p>
+										Las funciones de hash son útiles para asegurar que un usuario o un error de comunicación modifique los datos por accidente. Por ejemplo, es posible que un emisor desee asegurarse de que nadie modifique un mensaje en camino al destinatario. El dispositivo de envío introduce el mensaje en un algoritmo de hash y computa su compendio o huella digital de longitud fija.
+										<h4>Algoritmo de hash simple (checksum de 8 bits)</h4>
+										El checksum de 8 bits es uno de los primeros algoritmos de hash y es la forma más simple de una función de hash. Un checksum de 8 bits calcula el hash al convertir el mensaje en números binarios y luego organizando la cadena de números binarios en fragmentos de 8 bits. El algoritmo añade los valores de 8 bits. El último paso es convertir el resultado mediante un proceso llamado el complemento de 2. 
+										El complemento de 2 convierte un sistema binario al valor opuesto y luego agrega uno. Esto significa que un cero se convierte en uno y un uno se convierte en un cero. El último paso es agregar 1 lo que genera un valor hash de 8 bits. <br>
+										<a href="http://easyonlineconverter.com/converters/checksum_converter.html" target="_blank" rel="noopener noreferrer">Calcular el hash de 8 bits para el mensaje</a><b>BOB.</b>
+										<ul>
+											<li>
+												
+											</li>
+											<li>
+
+											</li>
+											<li>
+
+											</li>
+											<li>
+
+											</li>
+										</ul>
 									</p>
 								</div>
 							</section>
