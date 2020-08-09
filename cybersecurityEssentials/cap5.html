@@ -138,6 +138,61 @@
 										</div>
 										SHA-2 es un algoritmo más sólido y reemplaza a MD5. SHA-256, SHA-384 y SHA-512 son los algoritmos de p´roxima generación.
 									</p>
+									<h2>Archivos y medios digitales de hash</h2>
+									<p>
+										La integridad garantiza que los datos y la información estén completos y sin alteraciones al momento de la adquisición. Esto es importante para saber cuando un usuario descarga un archivo de Internet o un examinador forense busca la evidencia en los medios digitales. <br>
+										Para verificar la integridad de todas las imágenes de IOS, Cisco proporciona checksums de MD5 y SHA en el sitio web de software de descarga de Cisco. El usuario puede realizar una comparación de esta compendio de MD5 contra el compendio de MD5 de una imagen de IOS instalada en un dispositivo, como se muestra en la figura. El usuario puede estar tranquilo ahora de que nadie alteró ni modificó el archivo de imagen de IOS. <br>
+										<i>Nota: el comando verify /md5, que se muestra en la figura, excede el alcance de este curso.</i> <br>
+										El campo de informática forense digital usa el hash para verificar todos los medios digitales que contienen archivos. Por ejemplo, el examinador crea un hash y una copia de bit por bit de los medios que contienen archivos para producir un clon digital. El examinador compara el hash de los medios originales con la copia. Si los dos valores coinciden, las copias son idénticas. El hecho de que un conjunto de bits sea idéntico 
+										al conjunto original de bits establece fijación. La fijación ayuda a responder algunas preguntas:
+										<ul>
+											<li>
+												¿El examinador tiene los archivos que espera?
+											</li>
+											<li>
+												¿Los datos están dañados o modificados?
+											</li>
+											<li>
+												¿Puede el examinador probar que los archivos no están dañados?
+											</li>
+										</ul>
+										Ahora el experto en informática forense puede examinar la copia en busca de cualquier evidencia digital mientras deja el archivo original intacto y sin modificar.
+										<div>
+											<img src="images/comparacion de la síntesis de la imagen MD5 de IOS" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Hash de contraseñas</h2>
+									<p>
+										Los algoritmos de hash convierten cualquier cantidad de datos en una huella digital o hash digital de longitud fija. Un delincuente no puede invertir un hash digital para descubrir la entrada original. Si la entrada cambia por completo, puede dar lugar a un hash diferente. Esto funciona para proteger las contraseñas. Un sistema debe almacenar 
+										una contraseña de manera que pueda protegerla y aun así pueda verificar que la contraseña de un usuario es correcta. <br>
+										La figura muestra el flujo de trabajo para el registro y la autenticación de cuentas de usuarios mediante un sistema basado en hash. El sistema nunca escribe la contraseña en la unidad de disco duro, solo almacena el hash digital.
+										<div>
+											<img src="images/registro y autenticación de cuentas de usuario.PNG"  class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Aplicaciones</h2>
+									<p>
+										Utilice lasfunciones de hash criptográficas en las siguientes situaciones:
+										<ul>
+											<li>
+												Para proporcionar una prueba de autenticidad cuando se utiliza con una clave de autenticación secreta simétrica, como Seguridad IP (IPsec) o autenticación del protocolo de routing.
+											</li>
+											<li>
+												Para proporcionar autenticación al generar respuestas de única vez y unidireccionales a los desafíos que se presentan en los protocolos de autentcicación.
+											</li>
+											<li>
+												Para proporcionar una prueba de verificación de la integridad del mensaje, como als utilizadas en los contratos con firma digital y en los certificados de infraestructura de clave pública (PKI), como aquellos aceptados al acceder a un sitio 
+												seguro mediante un navegador.
+											</li>
+										</ul>
+										Al elegir un algoritmo de hash, utilice SHA-256 o superior ya que son los más seguros actualmente. Evite los algoritmos SHA-1 y MD5 debido a la detección de fallas de seguridad. En las redes de producción, implemente SHA-256 o superior. <br>
+										Aunque el hash puede detectar cambios accidentales, no puede protegerse de los cambios deliberados. No existe información de identificación única del emisor en el procedimiento de hash. Esto significa que cualquier persona puede calcular un hash para los datos, siempre y cuando tengan la función de hash correcta. Por ejemplo, cuando un mensaje 
+										atraviesa la red, un atacante potencial puede interceptar el mensaje, cambiarlo, recalcular el hash y añadir el hash al mensaje. El dispositivo receptor solo validará el hash que esté añadido. Por lo tanto, el hash es vulnerable a los ataques man-in-the-middle y no proporciona seguridad a los datos transmitidos.
+										<div>
+											<img src="images/uso de hash.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									
 								</div>
 							</section>
 
