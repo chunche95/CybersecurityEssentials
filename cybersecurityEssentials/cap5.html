@@ -272,6 +272,50 @@
 										Los HMAC también pueden autenticar a un usuario web. Muchos servicios web utilizan la autenticación básica, la cual no cifra el nombre de usuario y la contraseña durante la transmisión. Con el HMAC, el usuario envía un identificador de clave privada y un HMAC. El servidor busca la clave privada del usuario y crea un HMAC. El HMAC del usuario debe coincidir con el que calcula el servidor. <br>
 										Las VPN que utilizan IPsec dependen de las funciones de HMAC para autenticar el origen de cada paquete y proporcionar verificación de la integridad de los datos. <br>
 										Como se muestra en la figura, los productos de Cisco utilizan el hash para la autenticación de la entidad, la integridad de datos y para la autenticidad de datos: 
+										<ul>
+											<li>Los routers de Cisco IOS  usan el hash con las claves secretas usando el HMAC como la manera de agregar información de autenticacion a las actualizaciones de protocolo de routing</li>
+											<li>Los gateways y los clientes de IPsec usan algoritmos de hash, como MD5 y SHA-1 en el modo HMAC, para proporcionar integridad y autenticidad del paquete.</li>
+											<li>Las imágenes del software de Cisco en Cisco.com tienen un checksum basado en MD5 disponible para que los vclientes puedan verficar la integridad de las imágenes descargadas.</li>
+										</ul>
+										<i>Nota: El término entidad puede referirse a los dispositivos o sistemas dentro de una organización.</i>
+										<div>
+											<img src="images/usos del hash.PNG" alt="">
+										</div>
+									</p>
+									<h2>¿Qué es una firma digital?</h2>
+									<p>
+										Las firmas manuscritas y los sellos estampados prueban la autoría de los contenidos del documento. Las firmas digitales pueden proporcionar la misma funcionalidad que las firmas manuscritas. <br>
+										Los documentos digitales sin protección son muy fáciles de cambiar para cualquier persona. Una firma digital se utiliza para determinar si alguien edita un documento después de que el usuario lo firma. Una firma digital es un método matemático utilizado para validar la autenticidad y la integridad de un mensaje, documento digital o software. <br>
+										En muchos países, las firmas digitales tienen la misma importancia legal que un documento manualmente firmado. Las firmas electrónicas son vinculantes para contratos, negociaciones o cualquier otro documento que requiere una firma manuscrita. Un registro de auditoría sigue el historial de documentos electrónicos para fines de defensa normativos y legales. <br>
+										Una firma digital ayuda a establecer la autenticidad, la integridad y la imposibilidad de rechazo. Las firmas digitales tienen propiedades específicas que permiten la autenticación de la entidad y la integridad de los datos como se muestra en la figura.
+										<div>
+											<video src="videos/firma digital.mp4" loop muted autoplay class="responsive"></video>
+										</div>
+										Las firmas digitales son una alternativa a HMAC.
+									</p>
+									<h2>No rechazo</h2>
+									<p>
+										Rechazar significa denegar. La no repudiación es una manera de garantizar que el emisor de un mensaje o documento no pueda negar el envío del mensaje o del documento y que el destinatario no puede negar haber recibido el mensaje o documento. <br>
+										Una firma digital garantiza que el emisor firmó electrónicamente el mensaje o documento. Dado que una firma digital es única para las personas que la crean, esa persona no puede negar posteriormente que proporcionó la firma.
+									</p>
+									<h2>Procesos de creación de una firma digital</h2>
+									<p>
+										La criptografía asimétrica es la base de las firmas digitales. Un algoritmo de clave pública como RSA genera dos claves: Una privada y otra pública. Las claves se relacionan matemáticamente. <br>
+										Alicia desea enviar a Bob un correo electrónico que contiene información importante para la distribución de un producto nuevo. Alicia desea asegurarse de que Bob sepa que el mensaje provino de ella y que este no cambió después de que ella lo envió. <br>
+										Alicia crea el mensaje junto con un compendio del mensaje. Luego cifra este compendio con su clave privada como se muestra en la Figura. 
+										<div>
+											<img src="images/crea la síntesis del mensaje y lo cifra con su clave privada.PNG" class="responsive" alt="">
+										</div>
+										Alicia ata el mensaje, el compendio del mensaje cifrado y su clave pública para crear el documento firmado. Alicia envía esto a Bob como se muestra en la Figura. 
+										<div>
+											<img src="images/envia el documento firmado.PNG" class="responsive" alt="">
+										</div>
+										Bob recibe el mensaje y lo lee. Para asegurarse de que el mensaje proviene de Alice, él crea un compendio de mensaje del mensaje. Él toma el compendio del mensaje cifrado recibido de Alicia y lo descifra con la clave pública de Alicia. Bob compara el compendio del mensaje que recibió de Alicia con el compendio que él generó. 
+										Si coinciden, Bob sabe que puede confiar en que nadie manipuló el mensaje, como se muestra en la Figura. 
+										<div>
+											<img src="images/bo lee el documento y compara la síntesis del mensaje.PNG" class="responsive" alt="">
+										</div>
+										<a href="https://www.youtube.com/watch?v=E5FEqGYLL0o" target="_blank" rel="noopener noreferrer">Proceso de creación de un certificado digital.</a>
 									</p>
 								</div>
 							</section>
