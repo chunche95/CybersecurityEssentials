@@ -382,7 +382,88 @@
 									</p>
 									<h2>¿Qué es una autoridad de certificación?</h2>
 									<p>
-										
+										En Internet, sería poco práctico intercambiar continuamente la identificación entre todas las partes. Por lo tanto, las personas acuerdan aceptar la palabra de un tercero neutral. Probablemente, el tercero realiza una investigación exhaustiva antes de emitir las credenciales. Después de esta investigación exhaustiva, 
+										el tercero emite credenciales que son difíciles de falsificar. Desde ese momento, todas las personas que confían en el tercero simplemente aceptan las credenciales que emite el tercero. <br>
+										Por ejemplo, en la figura, Alice solicita una licencia de conducir. En este proceso, presenta evidencia de su identidad, como partida de nacimiento, identificación con fotografía, etc. a una oficina gubernamental de otorgamiento de licencias. La oficina valida la identidad de Alice y permite que Alice complete el examen de conducir. 
+										Al completarlo exitosamente, la oficina de otorgamiento de licencias emite una licencia de conducir a Alice. Posteriormente, Alice debe cobrar un cheque en el banco. Al presentar el cheque al cajero del banco, el cajero del banco le solicita la Id. El banco, debido a que confía en la oficina gubernamental de otorgamiento de licencias, 
+										verifica su identidad y cobra el cheque. <br>
+										<div>
+											<img src="images/analogía de PKI para la licencia de conducir.PNG" class="responsive" alt="">
+										</div>
+										Una autoridad de certificación (CA) funciona de la misma manera que una oficina de otorgamiento de licencias. La CA emite certificados digitales que autentican la identidad de las organizaciones y de los usuarios. Estos certificados también firman mensajes para asegurarse de que nadie los manipuló.
+									</p>
+									<h2>¿Qué contiene un certificado digital?</h2>
+									<p>
+										Siempre y cuando un certificado digital siga una estructura estándar, cualquier entidad podrá leer y comprenderlo, independientemente del emisor. El X.509 es un estándar de la infraestructura de clave pública (PKI) para administrar los certificados digitales. La PKI consta de las políticas, las funciones y los procedimientos necesarios para crear, 
+										administrar, distribuir, utilizar, almacenar y revocar los certificados digitales. El estándar X.509 especifica que los certificados digitales contienen la información estándar que se muestra a continuación.
+										<div>
+											<video src="videos/certificado digital-contenido.mp4" class="responsive" autoplay loop muted></video>
+										</div>
+									</p>
+									<h2>El proceso de validación</h2>
+									<p>
+										Los navegadores y las aplicaciones realizan una comprobación de validación antes de confiar en un certificado para asegurarse de que es válido. Los tres procesos incluyen lo siguiente:
+										<ul>
+											<li>
+												La detección de certificados valida el trayecto de certificación al marcar cada certificado desde el comienzo con el certificado de la CA raíz.
+											</li>
+											<li>
+												La validación del trayecto selecciona un certificado de la CA de emisión para cada certificado de la cadena.
+											</li>
+											<li>
+												La revocación determina si el certificado fue revocado y por qué.
+											</li>
+										</ul>
+									</p>
+									<h2>El trayecto del certificado.</h2>
+									<p>
+										Una persona obtiene un certificado para una clave pública de un CA comercial. El certificado pertenece a una cadena de certificados llamada cadena de confianza. 
+										El número de certificados en la cadena depende de la estructura jerárquica de la CA. <br>
+										La figura muestra una cadena de certificados para una CA de dos niveles. Existe una CA de raíz sin conexión y una CA subordinada en línea. 
+										<div>
+											<img src="images/trayecto de certificado.PNG" class="responsive" alt="">
+										</div>
+										El motivo de la estructura de dos niveles es que la firma X.509 permite una recuperación más sencilla en caso de riesgo. Si existe una CA sin conexión, 
+										puede firmar el nuevo certificado de CA en línea. Si no hay ninguna CA sin conexión, el usuario debe instalar un nuevo certificado de CA de raíz en cada máquina, teléfono o tablet cliente.
+									</p>
+									<h2>Actividad. Ordenar los pasos del proceso del certificado digital</h2>
+									<p>
+										<img src="images/Actividades/Actividad - ordenar los pasos del proceso de certificación digital.PNG" class="responsive" alt="">
+									</p>
+									<h2>Integridad de los datos</h2>
+									<p>
+										Las bases de datos proporcionan una forma eficiente de almacenar, recuperar y analizar datos. A medida que la recopilación de datos aumenta y los datos se vuelven más sensibles, 
+										es importante que los profesionales de la ciberseguridad protejan el creciente número de bases de datos. Piense en una base de datos como un sistema de llenado electrónico. 
+										La integridad de datos se refiere a la precisión, la uniformidad y la confiabilidad de los datos almacenados en una base de datos. La responsabilidad de la integridad de los datos 
+										depende de los diseñadores de bases de datos, desarrolladores y la administración de la organización. <br>
+										Las cuatro reglas o restricciones de integridad de los datos son las siguientes:
+										<ul>
+											<li>
+												<strong>Integridad de entidad.</strong> Todas las filas deben tener un identificador único llamado Clave Principal.
+												<div>
+													<img src="images/id.PNG" class="responsive" alt="">
+												</div>
+											</li>
+											<li>
+												<strong>Integridad de dominio.</strong> Todos los datos almacenados en una columna deben seguir el mismo formato y tener la misma definición. 
+												<div>
+													<img src="images/integridad de dominio.PNG" class="responsive" alt="">
+												</div>
+											</li>
+											<li>
+												<strong>Integridad referencial.</strong> Las relaciones entre tablas deben permanecer congruentes. Por lo tanto, un usuario no puede eliminar un registro que se relaciona con otro.
+												<div>
+													<img src="images/integridad referencial.PNG" class="responsive" alt="">
+												</div>
+											</li>
+											<li>
+												<strong>Integridad definida por el usuario.</strong> Un conjunto de reglas definidas por un usuario que no pertenece a una de las demás categorías. Por ejemlo, un cliente realiza 
+												un pedido nuevo, como se muestra en la imagen. El usuario primero verifica si este es un cliente nuevo. Si lo es, el usuario agrega al cliente nuevo a la tabla de clientes.
+												<div>
+													<img src="images/integridad def por el usuario.PNG" class="responsive" alt="">
+												</div>
+											</li>
+										</ul>
 									</p>
 								</div>
 							</section>
