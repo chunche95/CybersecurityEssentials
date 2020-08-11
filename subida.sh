@@ -121,3 +121,7 @@ git sube
 git add cybersecurityEssentials/cap5.html
 git nota "Capítulo 5 - El arte de garantizar la integridad"
 git sube
+
+git add cybersecurityEssentials/cap6.html
+git nota "Capítulo 6 - El reino ed los cinco nueves"
+git sube
