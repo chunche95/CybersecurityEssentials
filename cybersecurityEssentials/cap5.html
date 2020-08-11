@@ -465,6 +465,105 @@
 											</li>
 										</ul>
 									</p>
+									<h2>Controles del ingreso de los datos.</h2>
+									<p>
+										El ingreso de datos implica introducir datos en un sistema. Un conjunto de comandos garantiza que los usuarios introduzcan los datos correctos.
+										<h4>Despliegue los controles de datos principales</h4>
+										Cuente con una opción desplegable para las tablas principales en lugar de solicitar a las personas que introduzcan los datos. Un ejemplo de despliegue de controles de datos 
+										principales implica el uso de la lista de ubicaciones del sistema de dirección postal de EE. UU. para estandarizar las direcciones.
+										<h4>Controles de validación del campo de datos</h4>
+										Configure las reglas para las verificaciones básicas, que incluyen:
+										<ul>
+											<li>Entrada obligatoria que garantiza que un campo obligatorio contenga datos</li>
+											<li>Máscaras de entrada que evitan que los usuarios ingresen datos no válidos o ayuden a garantizar que introducen datos constantemente (como un número de teléfono, por ejemplo</li>
+											<li>Cantidades positivas en dólares</li>
+											<li>Los rangos de datos garantizan que un usuario ingrese datos dentro de un rango determinado (como una fecha de nacimiento introducida como 01-18-1820, por ejemplo)</li>
+											<li>Aprobación obligatoria de segundas personas (un cajero del banco recibe una solicitud de depósito o de retiro superior al valor especificado lo cual requiere una segunda o tercera aprobación)</li>
+											<li>Activador de modificador de registro máximo (si la cantidad de registros modificados supera un número predeterminado dentro de un período específico bloquea a un usuario hasta que el administrador 
+												identifica si las transacciones eran legítimas o no)</li>
+											<li>Indicador de actividad inusual (un sistema se bloquea cuando reconoce actividad inusual)</li>
+										</ul>
+										<div>
+											<img src="images/controles del ingreso de los datos.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Reglas de validación</h2>
+									<p>
+										Una regla de validación verifica que los datos se incluyan en los parámetros definidos por el diseñador de la base de datos.Una regla de validación ayuda a garantizar la integridad, la precisión y la coherencia de los datos. 
+										Los criterios utilizados en una regla de validación incluyen los siguientes:
+										<ul>
+											<li>
+												<b>Tamaño</b>: Controla la cantidad de caracteres en un entorno de datos.
+											</li>
+											<li>
+												<b>Formato</b>: Controla que los datos se ajusten a un formato específico.
+											</li>
+											<li>
+												<b>Coherencia</b>: Controla la coherencia de los códigos en los elementos de datos relacionados.
+											</li>
+											<li>
+												<b>Rango</b>: Controla que los datos se encuentran dentro de un valor mínimo y un valor máximo.
+											</li>
+											<li>
+												<b>Dígito de control</b>: Proporciona  un cálculo adicional para generar un dígito de control para la detección de errores.
+											</li>
+										</ul>
+										<div>
+											<video src="videos/reglas de validación.mp4" class="responsive" muted loop autoplay></video> <br>
+											<b>Cálculo del dígito de control para una ISBN de 10 dígitos</b>
+										</div>
+									</p>
+									<h2>Validación del tipo de datos</h2>
+									<p>
+										La validación del tipo de datos es la validación de datos más simple y verifica que un usuario que ingresa datos concuerde con el tipo de caracteres esperados. 
+										Por ejemplo, un número de teléfono no debería contener caracteres alfabéticos. Las bases de datos permiten tres tipos de datos: Números enteros, cadenas y decimales.
+										<div>
+											<img src="images/validacion del tipo de datos.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Validación de entrada</h2>
+									<p>
+										Uno de los aspectos más vulnerables de la administración de la integridad de la base de datos es controlar el proceso de entrada de datos. 
+										Muchos ataques conocidos se ejecutan contra una base de datos e insertan datos malformados. El ataque puede confundir, colapsar o hacer que la aplicación divulgue 
+										demasiada información al atacante. Los atacantes usan los ataques de entrada automatizados. <br>
+										Por ejemplo, los usuarios completan un formulario a través de una aplicación web para suscribirse a un boletín. Una aplicación de base de datos genera y envía automáticamente 
+										confirmaciones por correo electrónico. Cuando los usuarios reciben las confirmaciones por correo electrónico con un enlace URL para confirmar su suscripción, los atacantes 
+										modifican el enlace URL. Estas modificaciones incluyen el cambio de nombre de usuario, dirección de correo electrónico o estado de suscripción. El correo electrónico 
+										regresa al servidor que aloja la aplicación. Si el servidor web no verificó que la dirección de correo electrónico u otra información enviada de la cuenta coincide con la información 
+										de suscripción, el servidor recibió información falsa. Los hackers pueden automatizar el ataque para colmar la aplicación web con miles de suscriptores no válidos en la base 
+										de datos del boletín.
+										<div>
+											<img src="images/no se puede validar correctamente la entrada de datos.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Verificación de anomalías</h2>
+									<p>
+										La detección de anomalías se refiere a la identificación de patrones en los datos que no se ajustan al comportamiento esperado. Estos patrones no se ajustan son anomalías, 
+										valores atípicos, excepciones o aberraciones o sorpresas en diferentes aplicaciones de bases de datos. La detección y verificación de anomalías es una contramedida o protección 
+										importante en la identificación de la detección de fraudes. La detección de anomalías en la base de datos puede identificar fraudes en tarjetas de crédito y seguros. 
+										La detección de anomalías en la base de datos puede proteger los datos de la destrucción o los cambios masivos. <br>
+										La verificación de anormalías requiere solicitudes o modificaciones de datos de verificación cuando el sistema detecta patrones inusuales o sorpresivos. 
+										Un ejemplo de esto es una tarjeta de crédito con dos transacciones en ubicaciones de solicitud muy diferentes en poco tiempo. Si una solicitud de transacción de la ciudad 
+										de Nueva York se realiza a las 10:30 a.m. y una segunda solicitud proviene de Chicago a las 10:35 a. m., el sistema activa una verificación de la segunda transacción. <br>
+										Un segundo ejemplo se produce cuando una cantidad inusual de modificaciones en la dirección de correo electrónico se produce en un número inusual de registros de la base de datos. <br>
+										Dado que los datos de correo electrónico lanzan ataques de denegación de servicio, la modificación de correo electrónico de cientos de registros podría indicar que un atacante utiliza 
+										la base de datos de una organización como herramienta para su ataque de denegación de servicio.
+									</p>
+									<h2>Actividad. Identificar los controles de la inrtegridad de la base de datos</h2>
+									<p>
+										<img src="images/Actividades/Actividad - identificar los controles de la integridad de la base de datos.PNG" class="responsive" alt="">
+									</p>
+									<h2>Integridad de la entidad</h2>
+									<p>
+										Una base de datos es como un sistema de llenado electrónico. Mantener un archivado correcto es fundamental para mantener la confianza y la utilidad de los datos en la base de datos. 
+										Las tablas, los registros, los campos y los datos dentro de cada campo conforman una base de datos. Para mantener la integridad del sistema de archivado en la base de datos, los usuarios 
+										deben cumplir con determinadas reglas. La integridad de la entidad es una regla de integridad, que afirma que cada tabla debe tener una clave primaria y que la columna o las columnas 
+										elegidas para ser la clave principal deben ser únicas y no NULAS. El término «nulo» en una base de datos hace referencia a valores faltantes o desconocidos. La integridad de la entidad 
+										permite la organización adecuada de los datos para ese registro.
+										<div>
+											<img src="images/integridad de la entidad.PNG" class="responsive" alt="">
+										</div>
+									</p>
 								</div>
 							</section>
 
