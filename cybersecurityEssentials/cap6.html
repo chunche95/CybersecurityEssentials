@@ -390,6 +390,13 @@
 										</div>
 										La capacidad que tiene una red para recuperarse dinámicamente de la falla de un dispositivo que funciona como gateway predeterminado se conoce como "redundancia de primer salto".
 									</p>
+									<h2>Opciones de redundancia de router</h2>
+									<p>
+										La siguiente lista define las opciones disponibles para la redundancia de router según el protocolo que define la comunicación entre los dispositivos de red:
+											Protocolo de router de reserva activa (HSRP): el HSRP proporciona alta disponibilidad de red mediante una redundancia de routing de primer salto. Un grupo de routers utiliza el HSRP para seleccionar un dispositivo activo y un dispositivo en espera. En un grupo de interfaces de dispositivos, el dispositivo activo es el dispositivo que enruta los paquetes; el dispositivo en espera es el dispositivo que toma el control cuando falla el dispositivo activo. La función del router de suspensión del HSRP es controlar el estado operativo del grupo de HSRP y asumir rápidamente la responsabilidad de reenvío de paquetes si falla el router activo.
+											Protocolo de redundancia de router virtual (VRRP): el router de VRRP ejecuta el VRRP junto con uno o más routers conectados a la LAN. En la configuración del VRRP, el router elegido es el router virtual maestro y los otros routers actúan como respaldo en caso de que falle el router virtual maestro.
+											Protocolo de equilibrio de carga de gateway (GLBP): el GLBP protege el tráfico de datos contra fallas del router o el circuito, como HSRP y VRRP, y permite el equilibrio de carga (también denominado uso compartido de carga) entre un grupo de routers redundantes.
+									</p>
 								</div>
 							</section>
 
