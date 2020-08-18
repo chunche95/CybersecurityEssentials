@@ -345,6 +345,51 @@
 										En un centro de datos, la redundancia N+1 significa que el diseño del sistema puede soportar la pérdida de un componente. La N se refiere a diferentes componentes que conforman el centro de datos, incluidos servidores, fuentes de alimentación, switches y routers. El +1 es el componente o sistema adicional en espera listo para utilizar si es necesario. <br>
 										Un ejemplo de redundancia N+1 en un centro de datos es un generador de energía que se conecta cuando ocurre algo con la fuente de alimentación principal. Aunque un sistema N+1 contenga equipos redundantes, no es un sistema totalmente redundante.
 									</p>
+									<h2>RAID</h2>
+									<p>
+										Una matriz redundante de discos independientes (RAID) combina múltiples unidades de disco duro físicas en una única unidad lógica para proporcionar redundancia de datos y mejorar el rendimiento. La matriz redundante de discos independientes (RAID) toma datos normalmente almacenados en un disco duro y los extiende por varios discos. Si se pierde un disco, el usuario puede recuperar los datos de otros discos donde residen los datos. <br>
+										La RAID además puede incrementar la velocidad de la recuperación de datos. El uso de varias unidades permite la rápida recuperación de datos solicitados en lugar de depender de un solo disco para realizar el trabajo. <br>
+										Una solución de RAID puede estar basada en hardware o software. Una solución basada en hardware requiere un controlador de hardware especializado en el sistema que contiene las unidades de RAID. Los siguientes términos describen cómo la RAID almacena los datos en los distintos discos:
+										<ul>
+											<li>
+												<strong>Paridad.</strong> Detecta errores de datos.
+											</li>
+											<li>
+												<strong>Creación de bandas de datos.</strong> Escribe datos en varios discos.
+											</li>
+											<li>
+												<strong>Replicación de disco.</strong> Almacena los datos duplicados en una segunda undiad.
+											</li>
+										</ul>
+										Hay varios niveles de RAID disponibles, como se muestra a continuación:
+										<div>
+											<img src="images/comparación del niveles de RAID.PNG" class="responsive" alt="">
+										</div>
+										<a href="http://www.acnc.com/raid" target="_blank" rel="noopener noreferrer">Tutorial del nivel de RAID</a>- Explicación.
+									</p>
+									<h2>Árbol de expansión.</h2>
+									<p>
+										La redundancia aumenta la disponibilidad de la infraestructura protegiendo la red de un punto de falla único, como un cable de red o un switch defectuosos. Cuando los diseñadores incorporan la redundancia física en una red, se producen bucles y tramas duplicadas. Esto trae consecuencias graves para las redes conmutadas. <br>
+										El protocolo de árbol de expansión (STP) resuelve estos problemas. La función básica del STP es evitar bucles en la red cuando los switches se interconectan a través de varias rutas. El STP garantiza que los enlaces físicos redundantes estén libres de bucles. Garantiza que solo haya una ruta lógica entre todos los destinos en la red. El STP bloquea intencionalmente las rutas redundantes que pueden generar un bucle. <br>
+										El bloqueo de las rutas redundantes es fundamental para evitar bucles en la red. Las rutas físicas aún existen para proporcionar redundancia, pero el STP deshabilita estas rutas para evitar que se generen bucles. Si un switch o cable de red falla, el STP recalcula las rutas y desbloquea los puertos necesarios para permitir que la ruta redundante se active. <br>
+										Haga clic en Reproducir en la figura para ver el STP cuando ocurre una falla:
+										<div>
+											<video src="videos/STP compensa una falla de red.mp4" class="responsive" controls muted></video>
+										</div>
+									</p>
+									<h2>Redundancia del router</h2>
+									<p>
+										El gateway predeterminado generalmente es el router que proporciona acceso a los dispositivos al resto de la red o Internet. Si solo hay un router como gateway predeterminado, hay un punto de falla único. La organización puede elegir instalar un router de suspensión adicional. <br>
+										<div>
+											<img src="images/redundancia de router.PNG" class="responsive" alt="">
+										</div>
+										El router de transmisión y el router de suspensión utilizan un protocolo de redundancia para determinar qué router debe tener un rol activo en el reenvío de tráfico. Cada router está configurado con una dirección IP física y una dirección IP de router virtual. Los terminales usan la dirección IP virtual como gateway predeterminado. El router de transmisión escucha el tráfico que se dirige a 192.0.2.100. 
+										El router de transmisión y el router de suspensión utilizan sus direcciones IP físicas para enviar mensajes periódicos. El objetivo de estos mensajes es asegurarse de que ambos sigan en línea y disponibles. Si el router de suspensión no recibe más estos mensajes periódicos del router de transmisión, el router de suspensión asume el rol de transmisión, como se muestra en la imagen siguiente.
+										<div>
+											<img src="images/pasos de la comunicacion por falla del router.PNG" class="responsive" alt="">
+										</div>
+										La capacidad que tiene una red para recuperarse dinámicamente de la falla de un dispositivo que funciona como gateway predeterminado se conoce como "redundancia de primer salto".
+									</p>
 								</div>
 							</section>
 
