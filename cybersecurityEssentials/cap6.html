@@ -383,8 +383,10 @@
 										<div>
 											<img src="images/redundancia de router.PNG" class="responsive" alt="">
 										</div>
-										El router de transmisión y el router de suspensión utilizan un protocolo de redundancia para determinar qué router debe tener un rol activo en el reenvío de tráfico. Cada router está configurado con una dirección IP física y una dirección IP de router virtual. Los terminales usan la dirección IP virtual como gateway predeterminado. El router de transmisión escucha el tráfico que se dirige a 192.0.2.100. 
-										El router de transmisión y el router de suspensión utilizan sus direcciones IP físicas para enviar mensajes periódicos. El objetivo de estos mensajes es asegurarse de que ambos sigan en línea y disponibles. Si el router de suspensión no recibe más estos mensajes periódicos del router de transmisión, el router de suspensión asume el rol de transmisión, como se muestra en la imagen siguiente.
+										El router de transmisión y el router de suspensión utilizan un protocolo de redundancia para determinar qué router debe tener un rol activo en el reenvío de tráfico. Cada router está configurado con una dirección IP física y una dirección IP de router virtual. Los terminales usan la dirección IP virtual 
+										como gateway predeterminado. El router de transmisión escucha el tráfico que se dirige a 192.0.2.100. 
+										El router de transmisión y el router de suspensión utilizan sus direcciones IP físicas para enviar mensajes periódicos. El objetivo de estos mensajes es asegurarse de que ambos sigan en línea y disponibles. Si el router de suspensión no recibe más estos mensajes periódicos del router de transmisión, 
+										el router de suspensión asume el rol de transmisión, como se muestra en la imagen siguiente.
 										<div>
 											<img src="images/pasos de la comunicacion por falla del router.PNG" class="responsive" alt="">
 										</div>
@@ -393,9 +395,67 @@
 									<h2>Opciones de redundancia de router</h2>
 									<p>
 										La siguiente lista define las opciones disponibles para la redundancia de router según el protocolo que define la comunicación entre los dispositivos de red:
-											Protocolo de router de reserva activa (HSRP): el HSRP proporciona alta disponibilidad de red mediante una redundancia de routing de primer salto. Un grupo de routers utiliza el HSRP para seleccionar un dispositivo activo y un dispositivo en espera. En un grupo de interfaces de dispositivos, el dispositivo activo es el dispositivo que enruta los paquetes; el dispositivo en espera es el dispositivo que toma el control cuando falla el dispositivo activo. La función del router de suspensión del HSRP es controlar el estado operativo del grupo de HSRP y asumir rápidamente la responsabilidad de reenvío de paquetes si falla el router activo.
-											Protocolo de redundancia de router virtual (VRRP): el router de VRRP ejecuta el VRRP junto con uno o más routers conectados a la LAN. En la configuración del VRRP, el router elegido es el router virtual maestro y los otros routers actúan como respaldo en caso de que falle el router virtual maestro.
-											Protocolo de equilibrio de carga de gateway (GLBP): el GLBP protege el tráfico de datos contra fallas del router o el circuito, como HSRP y VRRP, y permite el equilibrio de carga (también denominado uso compartido de carga) entre un grupo de routers redundantes.
+										<ul>
+											<li>
+												<b>Protocolo de router de reserva activa (HSRP):</b> el HSRP proporciona alta disponibilidad de red mediante una redundancia de routing de primer salto. Un grupo de routers utiliza el HSRP para seleccionar un dispositivo activo y un dispositivo en espera. En un grupo de interfaces de dispositivos, 
+												el dispositivo activo es el dispositivo que enruta los paquetes; el dispositivo en espera es el dispositivo que toma el control cuando falla el dispositivo activo. La función del router de suspensión del HSRP es controlar el estado operativo del grupo de HSRP y asumir rápidamente la responsabilidad de reenvío de paquetes si falla el router activo.
+											</li>
+											<li><b>Protocolo de redundancia de router virtual (VRRP):</b> el router de VRRP ejecuta el VRRP junto con uno o más routers conectados a la LAN. En la configuración del VRRP, el router elegido es el router virtual maestro y los otros routers actúan como respaldo en caso de que falle el router virtual maestro.</li>
+											<li><b>Protocolo de equilibrio de carga de gateway (GLBP):</b> el GLBP protege el tráfico de datos contra fallas del router o el circuito, como HSRP y VRRP, y permite el equilibrio de carga (también denominado uso compartido de carga) entre un grupo de routers redundantes.</li>
+										</ul>
+									</p>
+									<h2>Redundancia de la ubicación</h2>
+									<p>
+										Una organización debe considerar la redundancia de la ubicación según sus necesidades. A continuación se describen tres formas de redundancia de la ubicación.
+										<h4>Sincrónica</h4>
+										<ul>
+											<li> Sincroniza ambas ubicaciones en tiempo real.</li>
+											<li> Requiere el uso intensivo de ancho de banda.</li>
+											<li> Las ubicaciones deben estar juntas para reducir la latencia.</li>
+										</ul>
+										<h4>Replicación asíncrona</h4>
+										<ul>
+											<li> Sincronizada en tiempo casi real.</li>
+											<li> Requiere menos ancho de banda.</li>
+											<li> Los sitios pueden estar separados porque la latencia no representa un problema.</li>
+										</ul>
+										<h4>Replicación en un punto determinado</h4>
+										<ul>
+											<li> Actualiza la ubicación de los datos de copia de respaldo periódicamente.</li>
+											<li> La mayor parte del ancho de banda es conservadora porque no requiere una conexión constante.</li>
+										</ul>
+										El equilibrio correcto entre el costo y la disponibilidad determinará la opción adecuada para una organización.
+									</p>
+									<h2>Packet Tracer: Redundancia del router y switch</h2>
+									<p>
+										<a href="docs/6.2.3.8 Packet Tracer - Router and Switch Redundancy.pdf" target="_blank" rel="noopener noreferrer">PT: Router and Siwtch Redundancy. (pdf)</a> <br>
+										<a href="docs/6.2.3.8 Packet Tracer - Router and Switch Redundancy.pka" target="_blank" rel="noopener noreferrer">PT: Router and Siwtch Redundancy. (pka)</a>
+									</p>
+									<h2>Diseño de recuperabilidad.</h2>
+									<p>
+										La recuperabilidad son los métodos y las configuraciones utilizados para hacer que un sistema o una red sean tolerantes a las fallas. Por ejemplo, una red puede tener enlaces redundantes entre los 
+										switches que ejecutan el STP. Si bien el STP ofrece una ruta alternativa a través de la red en caso de que falle un enlace, es posible que el intercambio no sea inmediato si la configuración no es óptima. <br>
+										Los protocolos de routing también ofrecen recuperabilidad, pero el ajuste puede mejorar el intercambio de manera tal que los usuarios de la red no lo notarán. Los administradores deben investigar las 
+										configuraciones no predeterminadas en una red de prueba para ver si pueden mejorar los tiempos de recuperación de la red. <br>
+										El diseño robusto es más que solo añadir redundancia. Es fundamental comprender las necesidades empresariales de la organización e incorporar la redundancia para crear una red recuperable.
+									</p>
+									<h2>Recuperabilidad de la aplicación.</h2>
+									<p>
+										La recuperabilidad de la aplicación es la capacidad de la aplicación para reaccionar ante los problemas en uno de sus componentes mientras aún funcionan. El tiempo de inactividad se debe a las fallas ocasionadas 
+										por los errores de aplicación o a las fallas de la infraestructura. Un administrador eventualmente deberá cerrar las aplicaciones para colocar parches, actualizar las versiones o implementar nuevas características. 
+										El tiempo de inactividad también puede ser el resultado de la corrupción de los datos, las fallas de los equipos, los errores de las aplicaciones y los errores humanos. <br>
+										Muchas organizaciones intentan equilibrar el costo de lograr la recuperabilidad de la infraestructura de las aplicaciones con el costo de perder clientes o negocios debido a una falla de las aplicaciones. 
+										La alta disponibilidad de las aplicaciones es compleja y costosa. La figura muestra tres soluciones disponibles para abordar la recuperabilidad de las aplicaciones. A medida que aumenta el factor de disponibilidad de cada solución, 
+										también aumentan la complejidad y el costo.
+										<div>
+											<video src="videos/recuperabilidad de la aplicación.mp4" loop muted autoplay class="responsive"></video>
+										</div>
+									</p>
+									<h2>Recuperabilidad del IOS</h2>
+									<p>
+										El sistema operativo interfuncional (IOS) para los routers y switches de Cisco incluye una función de configuración de recuperabilidad. Permite una recuperación más rápida si alguien maliciosa o inintencionadamente reformatea 
+										la memoria flash o borra el archivo de configuración de inicio. La función mantiene una copia de funcionamiento segura del archivo de imagen del IOS del router y una copia del archivo de configuración en ejecución. 
+										El usuario no puede eliminar estos archivos seguros también conocidos como bootset primario.
 									</p>
 								</div>
 							</section>
