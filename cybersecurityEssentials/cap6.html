@@ -528,6 +528,72 @@
 										</ul>
 										<img src="images/control de admisión de red.PNG" class="responsive" alt="">
 									</p>
+									<h2>Sistemas de detección de intrusiones</h2>
+									<p>
+										Los sistemas de detección de intrusiones (IDS) supervisan de forma pasiva el tráfico en la red. La figura muestra que un dispositivo habilitado para el IDS copia el flujo de tráfico y 
+										analiza el tráfico copiado en lugar de los paquetes realmente reenviados. Al trabajar sin conexión, se compara el flujo de tráfico capturado con firmas maliciosas conocidas de manera 
+										similar al software que verifica la existencia de un virus. Trabajar sin conexión significa varias cosas:
+										<div>
+											<img src="images/funcionamiento del sistema de detección de intrusiones.PNG" class="responsive" alt="">
+										</div>
+										<ul>
+											<li>Los IDS trabajan pasivamente.</li>
+											<li>El dispositivo del IDS se encuentra físicamente en la red, por lo que el tráfico debe replicarse.</li>
+											<li>El tráfico de red no pasa por los IDS, a menos que esté replicado.</li>
+										</ul>
+										Pasivamente significa que los IDS supervisan e informan el tráfico. No adoptan ninguna medida. Esta es la definición de operar en modo promiscuo.
+										La ventaja de operar con una copia del tráfico es que el IDS no afecta negativamente el flujo de paquetes del tráfico reenviado. La desventaja de operar con una copia del tráfico es que el IDS no puede evitar que los ataques 
+										maliciosos a un único paquete alcancen el objetivo antes de responder al ataque. Un IDS a menudo requiere la asistencia de otros dispositivos de red, como routers y firewalls, para responder a un ataque. <br>
+										Una mejor solución es utilizar un dispositivo que pueda detectar y detener inmediatamente un ataque. Un sistema de prevención de intrusiones (IPS) realiza esta función.
+									</p>
+									<h2>Sistemas de prevención de intrusiones</h2>
+									<p>
+										Un IPS se basa en la tecnología del IDS. Sin embargo, un dispositivo del IPS opera en el modo en línea. Esto significa que todo el tráfico entrante y saliente debe pasar por éste para su procesamiento. Como se muestra en la figura, 
+										el IPS no permite que los paquetes ingresen en el lado confiable de la red, a menos que haya analizado los paquetes. Puede detectar y abordar inmediatamente un problema de red. <br>
+										Un IPS supervisa el tráfico de red. Analiza el contenido y la carga útil de los paquetes en busca de ataques integrados más sofisticados que puedan incluir datos maliciosos. Algunos sistemas utilizan una combinación de tecnologías de detección, entre 
+										ellas, detección de intrusiones basada en análisis de protocolos, firmas y perfiles. Este análisis más exhaustivo permite al IPS identificar, detener y bloquear ataques que pasarían a través de un dispositivo tradicional de firewall. 
+										<div>
+											<img src="images/funcionamiento de un sistema de prevención de intrusiones.PNG" class="responsive" alt="">
+										</div>
+										Cuando un paquete ingresa a través de una interfaz en un IPS, la interfaz saliente o de confianza no recibe el paquete hasta que el IPS lo analiza. <br>
+										La ventaja de operar en el modo en línea es que el IPS puede evitar que los ataques a un único paquete alcancen el sistema objetivo. La desventaja es que un IPS mal configurado puede afectar negativamente el flujo de paquetes del tráfico reenviado.<br>
+										La diferencia más importante entre el IDS y el IPS es que el IPS responde inmediatamente y no permite el paso del tráfico malicioso, mientras que el IDS permite que el tráfico malicioso pase antes de abordar el problema.
+									</p>
+									<h2>NetFlow e IPFIX</h2>
+									<p>
+										NetFlow es una tecnología de Cisco IOS que proporciona estadísticas sobre los paquetes que atraviesan un router o switch multicapa de Cisco. NetFlow es el estándar para recopilar datos operativos de las redes. 
+										El grupo de trabajo de ingeniería de Internet (IETF) usa NetFlow (versión 9) de Cisco como base para la exportación de datos de flujo de IP (IPFIX). <br>
+										La IPFIX es un formato estándar de exportación de la información basada en routers sobre flujos de tráfico de red a los dispositivos de recopilación de datos. La IPFIX funciona en los routers y las aplicaciones de administración que admiten el protocolo. 
+										Los administradores de red pueden exportar la información de tráfico de red de un router y utilizar esta información para optimizar el rendimiento de la red. <br>
+										<div>
+											<img src="images/NetFlow en la red.PNG" class="responsive" alt="">
+										</div>
+										Las aplicaciones que admiten la IPFIX pueden mostrar estadísticas de los routers que admiten el estándar. La recopilación, el almacenamiento, el análisis y la información agregada proporcionada por los dispositivos que admiten la IPFIX ofrecen los siguientes beneficios: 
+										<ul>
+											<li>Protegen la red de amenazas internas y externas</li>
+											<li>Solucionan fallas en la red de manera rápida y precisa</li>
+											<li>Analizan los flujos de red para planificar la capacidad</li>
+										</ul>
+										<div>
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/DXXpY9u5V3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
+									</p>
+									<h2>Inteligencia de amenazas avanzadas</h2>
+									<p>
+										La inteligencia de amenazas avanzada puede ayudar a las organizaciones a detectar ataques antes o durante una de las etapas de ciberataque con la información correcta. <br>
+										Las organizaciones pueden detectar los indicadores de ataque en los informes de los sistemas y registros para las siguientes alertas:
+										<ul>
+											<li>Bloqueos de cuentas.</li>
+											<li>Todos los eventos de la base de datos.</li>
+											<li>Creación y eliminación de activos.</li>
+											<li>Modificación de la configuración de los sistemas.</li>
+										</ul>
+										La inteligencia de amenazas avanzada es un tipo de evento o dato de perfil que puede contribuir al monitoreo y la respuesta de la seguridad. A medida que los ciberdelincuentes se vuelven más sofisticados, es importante comprender las maniobras de malware. Con una visibilidad mejorada de las metodologías de ataque, 
+										una organización puede responder más rápidamente a los incidentes.
+										<div>
+											<img src="images/componentes de un ataque cibernético.PNG" class="responsive" alt="">
+										</div>
+									</p>
 								</div>
 							</section>
 
