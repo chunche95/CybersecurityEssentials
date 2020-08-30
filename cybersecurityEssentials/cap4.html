@@ -417,9 +417,318 @@
 											</div>
 										</div>
 									</p>
-									<h2>Control de acceso.</h2>
+									<h2>Control de acceso lógico.</h2>
 									<p>
-										
+										Los controles de acceso lógico son soluciones de hardware y software que se utilizan para administrar el acceso a recursos y sistemas. Estas soluciones basadas en tecnología incluyen las herramientas y los protocolos 
+										que los sistemas informáticos utilizan para la identificación, autenticación, autorización y responsabilidad. <br>
+										Los controles de acceso lógico incluyen los siguientes:
+										<ul>
+											<li>La encriptación es el proceso de tomar el texto simple y crear el texto cifrado.</li>
+											<li>Las tarjetas inteligentes tienn un microchip integrado.</li>
+											<li>Las contrasesñas constan de una cedena de caracteres protegida.</li>
+											<li>La biométrica consta de las características físicas de los usuarios.</li>
+											<li>Las listas de control de acceso (ACL) definen el tipo de tráfico permitido en una red.</li>
+											<li>Los protocolos son un conjunto de reglas que rigen el intercambio de datos entre dispositivos.</li>
+											<li>Los firewalls evitan el tráfico de red no deseado.</li>
+											<li>Los routers conectan al menos dos redes.</li>
+											<li>Los sistemas de detección de intrusiones supervisan una red para detectar actividades sospechosas.</li>
+											<li>Los niveles de recorte son determinados umbrales permitidos para detectar errores antes de activar un indicador rojo.</li>
+										</ul>
+										<div>
+											<video src="videos/control-de-acceso-lógico.mp4" class="responsive" autoplay loop muted></video>
+										</div>
+									</p>
+									<h2>Controles de acceso administrativo.</h2>
+									<p>
+										Los controles de acceso administrativo son las políticas  y los procedimientos que definen las organizaciones para implementar y hacer cumplir todos los aspectos del control de acceso no autorizado. 
+										Los controles admiistrativos se enfocan en las prácticas de personal y las prácticas empresariales. <br>
+										Los controles admiistrativos incluyen los siguientes:
+										<ul>
+											<li>Las políticas son declaraciones de intenciones.</li>
+											<li>Los procedimientos son los pasos detallados necesarios para realizar una actividad.</li>
+											<li>Las prácticas de contratación comprende los pasos que una organización sigue para encontrar empleados cualificados.</li>
+											<li>Las comprobaciones de antecedentes son una evaluación del empleo que incluye la información de la última verificación de empleo, historial de crédito y antecedentes penales.</li>
+											<li>La clasificación de datos califica los datos según su sensibilidad.</li>
+											<li>La capacitación de seguridad capacita a los empleados sobre las políticas de seguridad en una organización.</li>
+											<li>Las revisiones evalúan el rendimiento laboral de un empleado.</li>
+										</ul>
+										<div>
+											<img src="images/controles de acceso administrativos.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Control de acceso obligatorio.</h2>
+									<p>
+										El control de acceso obligatorio (MAC) restringe las acciones que un sujeto puede realizar en un objeto. Un sujeto puede ser un usuario o un proceso. Un objeto puede ser un archivo, un puerto o un dispositivo de entrada/salida. 
+										Una regla de autorización se aplica si un sujeto puede acceder al objeto o no. <br>
+										Las organizaciones utilizan el MAC donde se encuentran diferentes niveles de clasificaciones de seguridad. Cada objeto tiene una etiqueta y cada sujeto tiene una espacio libre. Un sistema MAC restringe a un sujeto según la 
+										clasificación de seguridad del objeto y la etiqueta anexada al usuario. <br>
+										Por ejemplo, tome las clasificaciones de seguridad militar denominadas "secreto" y "máxima confidencialidad". Si un archivo (un objeto) se considera de máxima confidencialidad, es un archivo que se clasifica (etiqueta) como "máxima confidencialidad". 
+										Las únicas personas (sujetos) que pueden ver el archivo (objeto) son aquellas con un permiso de "maxima confidencialidad". El mecanismo de control de acceso debe garantizar que una persona (sujeto) con permiso "Secreto" solamente, 
+										nunca obtenga acceso a un archivo catalogado como "de máxima confidencialidad". De manera similar, un usuario (sujeto) con permiso de acceso "de máxima confidencialidad" no puede cambiar la clasificación de un archivo (objeto) 
+										catalogado como "de máxima confidencialidas" a "secreto". Además, un usuario con permiso de "máxima confidencialidad" no puede enviar un archivo de máxima confidencialidad a un usuario que solo tiene permiso para ver información secreta.
+									</p>
+									<h2>Control de acceso discrecional</h2>
+									<p>
+										El propietario de un objeto determina si permite el acceso a un objeto con control de acceso discrecional (DAC). DAC otorga o restringe el acceso de objeto determinado por el propietario del objeto. Como su nombre lo indica, 
+										los controles son discrecionales porque el propietario de un objeto con ciertos permisos de acceso pueden transferir esos permisos a otro sujeto. <br>
+										En sistemas que emplean controles de acceso discrecionales, el propietario de un objeto puede decidir qué sujetos pueden acceder al objeto y qué acceso específico pueden tener. Un método común para lograr esto es con permisos, 
+										como se muestra en la figura. El propietario de un archivo puede especificar qué permisos (lectura/escritura/ejecución) pueden tener otros usuarios. <br>
+										Las listas de control de acceso son otros mecanismos comunes utilizados para implementar el control de acceso discrecional. Un lista de control de acceso utiliza reglas para determinar qué tráfico puede ingresar o salir de una red.
+										<div>
+											<img src="images/control de acceso discrecional.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Control de acceso basado en roles.</h2>
+									<p>
+										El control de acceso basado en roles (RBAC) depende del rol del sujeto. Los roles son las funciones de trabajo en una organización. Los roles específicos requieren permisos para realizar determinadas operaciones. Los usuarios adquieren permisos a través de su función. <br>
+										El RBAC puede trabajar junto con DAC o MAC al hacer cumplir las políticas de cualquiera de ellos. El RBAC ayuda a implementar la administración de seguridad en grandes organizaciones con cientos de usuarios y miles de permisos posibles. 
+										Las organizaciones aceptan ampliamente el uso de RBAC para administrar permisos en un sistema o una aplicación, como una mejor práctica.
+									</p>
+									<h2>Control de acceso basado en reglas.</h2>
+									<p>
+										El control de acceso basado en reglas utiliza listas de control de acceso (ACL) para ayudar a determinar si otorga acceso o no. Una serie de reglas se incluye en la ACL, como se muestra en la figura. 
+										Establecer si se debe otorgar acceso depende de estas reglas. Un ejemplo de esa regla es una que indica que ningún empleado puede acceder al archivo de nómina después de horario o los fines de semana. <br>
+										Como ocurre con el MAC, los usuarios no pueden cambiar las reglas de acceso. Las organizaciones pueden combinar el control de acceso basado en reglas con otras estrategias para implementar las restricciones de acceso. 
+										Por ejemplo, los métodos de MAC pueden utilizar un enfoque basado en reglas para la implementación. <br>
+										<div>
+											<img src="images/control de acceso basdo en reglas.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Actividad. Indetificar las estrategias de control de acceso.</h2>
+									<p>
+										<img src="images/Actividades/Actividad -  Identificar las estrategias de control de acceso.PNG" class="responsive" alt="">
+									</p>
+									<h2>¿Qué es la identificación?</h2>
+									<p>
+										La identificación aplica las reglas establecidas por la política de autorización: Un sujeto solicita acceso a un recurso del sistema. Cada vez que el sujeto solicita acceso a un recurso, los controles de acceso determinan si otorgar o denegar el acceso. 
+										Por ejemplo, la política de autorización determina qué actividades puede realizar un usuario en un recurso. <br>
+										Un identificador único garantiza la asociación correcta entre las actividades permitidas y los sujetos. Un nombre de usuario es el método más común utilizado para identificar a un usuario. 
+										Un nombre de usuario puede ser una combinación alfanumérica, un número de identificación personal (PIN), una tarjeta inteligente o método biométrico, por ejemplo una huella digital, el escaneo de retina o el reconocimiento de voz. <br>
+										Un identificador único garantiza que un sistema pueda identificar a cada usuario de manera individual; por lo tanto, permite que un usuario autorizado realice las acciones adecuadas en un recurso particular.
+									</p>
+									<h2>Controles de identificación</h2>
+									<p>
+										Las políticas de ciberseguridad determinan qué controles de identidad deben utilizarse. La sensibilidad de la información y los sistemas de información determinan cuán rigurosos son los controles. El aumento de las violaciones de datos han forzado a 
+										muchas organizaciones a fortalecer sus controles de identificación. Por ejemplo, la industria de la tarjeta de crédito en los Estados Unidos requiere que todos los proveedores convertir a los sistemas de identificación de la tarjeta inteligente.
+									</p>
+									<h2>Qué es lo que sabe - Método de autenticación.</h2>
+									<p>
+										Contraseñas o PIN son ejemplos de algo que un usuario conoce. Las contraseñas son el método más popular que se utiliza para la autenticación. Los términos, contraseña, clave de acceso o PIN se conocen de manera genérica como contraseña. 
+										Una contraseña es una cadena de caracteres que se utiliza para autenticar la identidad de un usuario. Si esta cadena de caracteres se relaciona con un usuario ( <i>como un nombre, una fecha de nacimiento o una dirección</i> ), será más fácil para los delincuentes cibernéticos adivinar la contraseña del usuario. <br>
+										Varias publicaciones recomiendan que la contraseña tenga al menos ocho caracteres. Los usuarios no deben crear una contraseña que sea tan larga y por lo tanto sea difícil de memorizar, o a la inversa, que sea tan corta y que por lo tanto sea fácil de descifrarla. 
+										Las contraseñas deben contener una combinación de letras mayúsculas y minúsculas, números y caracteres especiales. Haga clic aquí para probar las contraseñas actuales. <br>
+										Los usuarios necesitan utilizar contraseñas diferentes para los distintos sistemas porque si un delincuente decodifica la contraseña de usuario una vez, podrá acceder a todas las cuentas de un usuario. El administrador de contraseñas puede 
+										ayudar a un usuario a crear y a recordar las contraseñas seguras. Haga clic aquí para ver un generador de contraseñas seguras.
+									</p>
+									<h2>Qué es lo que tienen</h2>
+									<p>
+										Las tarjetas inteligentes y los llaveros de seguridad son dos ejemplos de algo que los usuarios tienen en su poder.
+										<ul>
+											<ol>
+												<b>Seguridad de tarjeta inteligente</b>. Una tarjeta inteligente es una pequeña tarjeta de plástico, aproximadamente del tamaño de una tarjeta de crédito, con un pequeño chip incorporado en ella. 
+												El chip es un portador de datos inteligente, capaz de procesar, almacenar, y de proteger los datos. Las tarjetas inteligentes almacenan información privada, como números de cuenta bancaria, identificación personal, historias clínicas y firmas digitales. 
+												Las tarjetas inteligentes proporcionan autenticación y cifrado para mantener los datos a salvo.
+												<div>
+													<img src="images/TI.PNG" class="responsive" alt="">
+												</div>
+											</ol>
+											<ol>
+												<b>Llaveros de seguridad</b>. Un llavero de seguridad es un dispositivo que es lo suficientemente pequeño como para llevarlo en un llavero. Utiliza un proceso llamado autenticación de dos factores, 
+												que es más seguro que una combinación de nombre de usuario y contraseña. Primero, el usuario ingresa un número de identificación personal (PIN). Si está ingresado correctamente, el llavero de seguridad mostrará un número. 
+												Éste es el segundo factor que el usuario debe ingresar para iniciar sesión en el dispositivo o la red.
+												<div>
+													<img src="images/llavero.PNG" class="responsive" alt="">
+												</div>
+											</ol>
+										</ul>
+									</p>
+									<h2>Quién es</h2>
+									<p>
+										Una característica física única, como una huella digital, una retina o una voz que identifica a un usuario específico se denomina biométrica. La seguridad biométrica compara características físicas con perfiles almacenados para autenticar usuarios. Un perfil es un archivo de datos que contiene características 
+										conocidas de una persona. El sistema otorga acceso de usuario si sus características coinciden con las configuraciones guardadas. Un lector de huellas digitales es un dispositivo biométrico común. <br>
+										Existen dos tipos de identificadores biométricos:
+										<ul>
+											<li>
+												<b>Características fisiológicas</b>. Incluyen huellas digitales, ADN, características de rostro, manos, retina, oído...
+											</li>
+											<li>
+												<b>Características de comportamiento</b>. Incluye patrones de comportamiento como gestos de voz, ritmo de escrtura o la manera de caminar de un usuario.
+											</li>
+										</ul>
+										Los datos biométricos son cada vez más popular en sistemas de seguridad pública, productos electrónicos de consumo y aplicaciones de punto de venta. La implementación de datos biométricos utiliza un dispositivo de escaneo o lectura, un software que convierte la información escaneada en formato digital y una base de datos 
+										que almacena datos biométricos para su comparación.
+									</p>
+									<h2>Autenticación de varios factores</h2>
+									<p>
+										La autenticación de varios factores usa al menos dos métodos de verificación. Un llavero con clva de seguridad es un buen ejemplo. Los dos factores son algo que usted sabe, como una contraseña, y algo que posee, como un transmisor de seguridad. Avance un paso más al agregar algo que usted es, 
+										por ejemplo el escaneo de huellas digitales.
+										La autenticación de varios factores pueden reducir la incidencia de robo de identidad en línea porque al conocer la contraseña no le daría acceso a los delincuentes cibernéticos a la información del usuario. Por ejemplo, un sitio web de banca en línea puede requerir una contraseña y un PIN que el usuario recibe 
+										en su smartphone. Como se muestra en la figura, el retiro de efectivo de un ATM es otro ejemplo de autenticación de varios factores. El usuario debe tener la tarjeta de un banco y conocer el PIN antes de que el ATM dispense dinero. 
+									</p>
+									<h2>Actividad. Identificar los métodos de autenticación</h2>
+									<p>
+										<img src="images/Actividades/Actividad -  identificar los métodos de autenticación.PNG" class="responsive" alt="">
+									</p>
+									<h2>¿Qué es la autorización?</h2>
+									<p>
+										La autorización controla lo que el usuario puede hacer o no en la red después de una autenticación satisfactoria: Después de que un usuario prueba su identidad, el sistema verifica a qué recursos de red puede acceder el usuario y qué pueden hacer los usuarios con los recursos. 
+										Como se muestra en la figura, la autorización responda la pregunta, "<i>¿Qué privilegios de lectura, copia, creación y eliminación tiene el usuario?</i>"
+										<div>
+											<img src="images/autorizacion-qué es.PNG" class="responsive" alt="">
+										</div>
+										La autorización utiliza un conjunto de atributos que describe el acceso del usuario a la red. El sistema compara estos atributos a la información contenida en la base de datos de autenticación, determina un conjunto de restricciones para ese usuario y lo envía al router local donde el usuario está conectado. <br>
+										La autorización es automática y no requiere que los usuarios tomen medidas adicionales después de la autenticación. Implemente la autorización inmediatamente después de que el usuario realice la autenticación.
+									</p>
+									<h2>Uso de la autorización</h2>
+									<p>
+										La definición de reglas de autorización es el primer paso para controlar el acceso. Una política de autorización establece estas reglas. <br>
+										Una política de pertenencia a grupos define la autorización según la pertenencia a un grupo determinado. Por ejemplo, todos los empleados de una organización tienen una tarjeta de deslizamiento, que proporciona acceso a las instalaciones. Si el trabajo de un empleado no requiere que 
+										este tenga acceso a la sala de servidores, la tarjeta de seguridad no le permitirá ingrese a esa sala. <br>
+										Una política de autoridad define los permisos de acceso según la posición de un empleado dentro de la organización. Por ejemplo, solo los empleados de nivel <b>senior</b> en un departamento de TI pueden tener acceso a la sala de servidores.
+									</p>
+									<h2>¿Qué es la responsabilidad?</h2>
+									<p>
+										La responsabilidad rastrea una acción hasta una persona o un proceso y realiza el cambio a un sistema, recopila esta información e informa los datos de uso. La organización puede utilizar estos datos para fines como auditorías o facturación. Los datos recopilados pueden incluir el tiempo de inicio de sesión de un usuario, 
+										si el inicio de sesión fue un éxito o una falla o los recursos de red a los que el usuario tenía acceso. Esto permite que una organización localice acciones y errores durante una auditoría o una investigación.
+									</p>
+									<h2>Implementacion de la responsabilidad</h2>
+									<p>
+										La implementación de responsabilidad consta de tecnologías, políticas procedimientos y formación. Los archivos de registro proporcionan información detallada según los parámetros seleccionados. Por ejemplo, una organización puede ver el registro de los inicios de sesión fallidos y correctos. <br>
+										Las fallas de inicio de sesión pueden indicar que un delincuente intentó hackear una cuenta. Los inicios de sesión exitosos indican a una organización qué usuarios utilizan qué recursos y cuándo. ¿Es normal que un usuario autorizado tenga acceso a la red de la empresa a las 3:00 a.m.? Las políticas y los procedimientos de la organización 
+										explican qué medidas deben registrarse y cómo se generan, se revisan y almacenan los archivos de registro. <br>
+										La retención de datos, la eliminación de medios y los requisitos de cumplimiento proporcionan la responsabilidad. Muchas leyes requiere la implementación de medidas para proteger diferentes tipos de datos. Estas leyes guían a una organización de forma correcta para administrar, almacenar y desechar datos. 
+										La educación y el conocimiento de las políticas, los procedimientos y las leyes relacionadas de una organización también pueden contribuir a la responsabilidad.
+									</p>
+									<h2>Controles preventivos</h2>
+									<p>
+										Prevenir significa evitar que algo suceda. Los controles de acceso preventivo evitan que ocurran actividades no deseadas o no autorizadas. Para un usuario autorizado, un control de acceso preventivo significa restricciones. La asignación de privilegios específicos a un usuario en un sistema es un ejemplo de control preventivo. 
+										Aunque un usuario es un usuario autorizado, el sistema establece límites para evitar que el usuario tenga acceso y realice acciones no autorizadas. Un firewall que bloquea el acceso a un puerto o servicio que los delincuentes cibernéticos puedan atacar también se considera un tipo de control preventivo.
+									</p>
+									<h2>Controles disuasivos</h2>
+									<p>
+										Un obstáculo es lo opuesto a una recompensa. Una recompensa alienta a las personas a hacer lo correcto, mientras que un obstáculo las desalienta a hacer lo incorrecto. Los profesionales y las empresas de seguridad cibernética utilizan obstáculos para limitar o para mitigar una acción o un comportamiento, 
+										pero los controles disuasivos no los dejan. Los obstáculos del control de acceso desalientan a los delincuentes cibernéticos a obtener acceso no autorizado a los sistemas de información o a datos confidenciales. Los obstáculos del control de acceso desalientan los ataques al sistema, el robo de datos o la propagación de códigos maliciosos. 
+										Las organizaciones utilizan obstáculos de control de acceso para hacer cumplir las políticas de ciberseguridad. <br>
+										<div>
+											<img src="images/ejemplos de control disuasorio.PNG" class="responsive" alt="">
+										</div>
+										Los obstáculos hacen que los delincuentes cibernéticos potenciales piensen dos veces antes de cometer un delito. La figura enumera los obstáculos comunes de control de acceso que se utilizan en el mundo de la ciberseguridad.
+									</p>
+									<h2>Controles de detección</h2>
+									<p>
+										La detección es el acto o proceso de advertir o descubrir algo Las detecciones de control de acceso identifican diferentes tipos de actividad no autorizada. Los sistemas de detección pueden ser muy simples, como un detector de movimiento o un guardia de seguridad. También pueden ser más complejos, como un sistema de detección de intrusiones. <br>
+										Todos los sistemas de detección tienen muchas cosas en común; buscan la actividad inusual o prohibida. También proporcionan métodos para registrar o alertar a los operadores del sistema sobre un posible acceso no autorizado. Los controles de detección no impiden que algo suceda; más bien son medidas que se toman después de que se realiza el hecho.
+										<div>
+											<img src="images/guardian.jpg" alt="" class="responsive">
+										</div>
+									</p>
+									<h2>Controles correctivos</h2>
+									<p>
+										Los controles correctivos contrarrestan algo que no es deseable. Las organizaciones establecen controles de acceso correctivos después de que un sistema experimenta una amenaza. Los controles correctivos restauran el sistema a un estado de confidencialidad, integridad y disponibilidad. También pueden restaurar los sistemas a la normalidad 
+										luego de que se produzca una actividad no autorizada.
+										<div>
+											<img src="images/ejemplos de control de acceso correctivo.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Controles de recuperación</h2>
+									<p>
+										La recuperación implica volver a un estado normal. Los controles de acceso de recuperación restauran recursos, funciones y capacidades después de una violación de la política de seguridad. Los controles de recuperación pueden reparar el daño, además de detener cualquier otro daño. Estos controles tienen capacidades más avanzadas sobre los controles de acceso correctivos.
+										<div>
+											<img src="images/ejemplos de control de acceso de recuperación.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Controles compensativos</h2>
+									<p>
+										Implican compensar algo. Los controles de acceso compensativos ofrecen opciones a otros controles para fomentar el cumplimiento en respaldo de la política de seguridad. <br>
+										Un control compensativo también puede ser una sustitución utilizada en lugar del control que no es posible en determinadas circunstancias. Por ejemplo, una organización puede no tener un perro guardián, entonces implementa un detector de movimiento con un reflector y un sonido de ladridos.
+										<div>
+											<img src="images/ejemplos de control de acceso de compensación.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Actividad. Identificar los tipos de controles de seguridad.</h2>
+									<p>
+										<img src="images/Actividades/actividad - identificar los tipos de controles de seguridad.PNG"  class="responsive" alt="">
+									</p>
+									<h2>¿Qué es el enmascaramiento de datos?</h2>
+									<p>
+										El enmascaramiento de datos es una tecnología que protege los datos al reemplazar la información confidencial por una versión no confidencial. La versión no confidencial se parece a la información original. Esto significa que un proceso comercial puede usar los datos no confidenciales y no es necesario cambiar las aplicaciones de respaldo o las instalaciones de almacenamiento de datos. 
+										En el caso de uso más común, el enmascaramiento limita la propagación de datos confidenciales dentro de los sistemas de TI al distribuir los conjuntos de datos sustitutos para la prueba y el análisis. La información puede estar enmascarada dinámicamente si el sistema o la aplicación determina que una solicitud de información confidencial del usuario es arriesgada.
+									</p>
+									<h2>Técnicas de enmascaramiento de datos</h2>
+									<p>
+										El enmascaramiento de datos puede reemplazar los datos confidenciales en los entornos no productivos para proteger la información subyacente. <br>
+										Existen varias técnicas de enmascaramiento de datos que pueden garantizar que los datos sigan siendo importantes pero se cambien lo suficiente para protegerlos:
+										<ul>
+											<li>
+												La sustitución reemplaza los datos por valores que parecen auténticos para aplicar el anonimato a los registros de datos.
+											</li>
+											<li>
+												El desplazamiento deriva un conjutno de sustitución  de la misma columna de datos que un usuario desea enmascarar. Esta técnica funciona bien para la información financiera en una base de datos de prueba, por ejemplo.
+											</li>
+											<li>
+												La anulación aplica un valor a un campo específico, lo cual evita completamente la visibilidad de los datos.
+											</li>
+										</ul>
+									</p>
+									<h2>¿Qué es ls esteganografía?</h2>
+									<p>
+										La esteganografía oculta datos (el mensaje) en otro archivo, como un archivo de texto gráfico, de audio u otro archivo de texto. La ventaja de la esteganografía con respecto a la criptografía es que el mensaje secreto no atrae ninguna atención especial. Nadie sabría nunca que una imagen contenía realmente un mensaje secreto al ver el archivo en formato electrónico o impreso.
+										Existen varios componentes involucrados en el ocultamiento de datos: Primero, existen los datos integrados, que es el mensaje secreto. El texto cubierto (imagen cubierta o audio cubierto) oculta los datos integrados y genera un estegotexto (o una estegoimagen o estegoaudio). Una estegoclave controla el proceso de ocultamiento.
+									</p>
+									<h2>Técnicas de esteganografía</h2>
+									<p>
+										El enfoque utilizado para integrar los datos en una imagen cubierta utiliza los bits menos significativos (LSB). Este método utiliza bits de cada píxel en la imagen. Un píxel es la unidad básica de color programable en una imagen de computadora. El color específico de un píxel es una combinación de tres colores: rojo, verde y azul (RGB). Tres bytes de datos especifican 
+										el color de un píxel (un byte para cada color). Ocho bits conforman un byte. El sistema de colores de 24 bits utiliza los tres bytes. LSB utiliza un bit de cada uno de los componentes rojo, verde y azul. Cada píxel puede ahorrar 3 bits. <br>
+										La figura muestra tres píxeles de una imagen de 24 bits. Una de las letras del mensaje secreto es la letra T y la inserción del caracter T solo cambia dos bits del color. El ojo humano no puede reconocer los cambios realizados a los bits menos significativos. El resultado es un carácter oculto. 
+										<div>
+											<img src="images/uso del  bit menos significativo.PNG" class="responsive" alt="">
+										</div>
+										En promedio, menos de la mitad de los bits de una imagen deberá cambiar para ocultar un mensaje secreto de manera eficaz.
+									</p>
+									<h2>Práctica de laboratorio: uso de la esteganografía</h2>
+									<p>
+										<a href="docs/4.3.2.3 Lab - Using Steganography.pdf" target="_blank" rel="noopener noreferrer">Práctica de laboratorio: uso de la esteganografía.</a>
+										<div>
+											<img src="images/Actividades/practica de laboratorio - uso de la esteganografía.PNG" class="responsive" alt="">
+										</div>
+									</p>
+									<h2>Esteganografía social</h2>
+									<p>
+										La esteganografía social oculta información a plena vista al crear un mensaje que algunos pueden leer de determinada manera para recibir el mensaje. Otras personas que lo ven de manera normal, no verán el mensaje. Los adolescente utilizan esta táctica en los medios sociales para comunicarse con sus amigos más cercanos mientras que otros, como sus padres, 
+										desconocen el significado real del mensaje. Por ejemplo, la frase "vamos al cine" puede significar "vamos a la playa". <br>
+										Las personas en los países que censuran los medios también utilizan la esteganografía social para mandar sus mensajes al deletrear las palabras de manera incorrecta a propósito o hacer referencias imprecisas. En efecto, se comunican con diferentes audiencias de manera simultánea.
+									</p>
+									<h2>Detección</h2>
+									<p>
+										El estegoanálisis es el descubrimiento de que existe información oculta. El objetivo del estegoanálisis es detectar información oculta. <br>
+										Los patrones de la estegoimagen generan sospecha. Por ejemplo, un disco puede tener áreas sin utilizar que ocultan información. Las utilidades de análisis de disco pueden informar sobre la información oculta en clústeres sin utilizar de dispositivos de almacenamiento. Los filtros pueden capturar los paquetes de datos que contienen información oculta en los encabezados de paquete. 
+										Ambos métodos usan las firmas de esteganografía. <br>
+										Al comparar una imagen original con la estegoimagen, un analista puede recoger patrones repetitivos de manera visual.
+									</p>
+									<h2>Ofuscación</h2>
+									<p>
+										La ofuscación de datos es el uso y la práctica de las técnicas de esteganografía y enmascaramiento de los datos en el área de ciberseguridad y la profesión de inteligencia cibernética: La ofuscación es el arte de hacer que el mensaje sea confuso, ambiguo o más difícil comprender. Un sistema puede codificar mensajes deliberadamente para evitar el acceso no autorizado a la información confidencial.
+									</p>
+									<h2>Aplicaciones</h2>
+									<p>
+										La marca el agua de software protege al software del acceso o la modificación no autorizada. La marca de agua de software inserta un mensaje secreto en el programa como prueba de propiedad. El mensaje secreto es la marca de agua del software. Si alguien intenta eliminar la marca de agua, el resultado es un código no funcional. <br>
+										La ofuscación de software traduce el software a una versión equivalente a la original, pero a una solución que es más difícil de analizar para los atacantes. Si se intenta revertir la ingeniería del software esto puede brindar resultados incomprensibles de un software que todavía funciona.
+									</p>
+									<h2>Packet Tracer: Configuración del modelo de transporte de VPN</h2>
+									<p>
+										<a href="docs/4.3.3.3 Packet Tracer - Configuring VPN Transport Mode.pdf" target="_blank" rel="noopener noreferrer">PT: Configuración del modo de transporte de VPN. (pdf)</a> <br>
+										<a href="docs/4.3.3.3 Packet Tracer - Configuring VPN Transport Mode.pka" target="_blank" rel="noopener noreferrer">PT: Configuración del modo de transporte de VPN. (pka)</a>
+									</p>
+									<h2>Packet Tracer: Configuración del modo de túneles VPN.</h2>
+									<p>
+										<a href="docs/4.3.3.4 Packet Tracer - Configuring VPN Tunnel Mode.pdf" target="_blank" rel="noopener noreferrer">PT: Configuración del modo de túneles VPN. (pdf)</a> <br>
+										<a href="docs/4.3.3.4 Packet Tracer - Configuring VPN Tunnel Mode.pka" target="_blank" rel="noopener noreferrer">PT: Configuración del modo de túneles VPN. (pka)</a>
+									</p>
+									<h2>Cap.4: El arte de proteger los secretos.</h2>
+									<p>
+										En este capítulo, se analizaron los principios de criptología utilizados para comunicaciones seguras. En el capítulo se explicaron los algoritmos de encriptación simétrica y asimétrica, se compararon los dos algoritmos y se proporcionaron ejemplos de su uso. <br>
+										En el capítulo se explicó cómo el control de acceso evita el acceso no autorizado a un edificio, a una sala, a un sistema o a un archivo mediante la identificación, autenticación, autorización y responsabilidad. Además, en el capítulo también se describieron los diversos modelos de control de acceso y los tipos de control de acceso. <br>
+										El capítulo concluyó con el análisis de las diversas maneras en que los usuarios enmascaran los datos. La ofuscación de datos y la esteganografía son dos técnicas utilizadas para lograr el enmascaramiento de datos.
 									</p>
 								</div>
 							</section>
@@ -427,28 +736,40 @@
 						<!-- Three -->
 							<section id="three">
 								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+									<h3>Capitulemos</h3>
+									<p></p>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.1.jpg" alt="" /></a>
+											<a href="cap3.html" class="image"><img src="../images/pic02.2.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Cap.3 - Amenazas, vulnerabilidades y ataques a la ciberseguridad.</h4>
+												<a href="cap3.html">
+													<p>
+														Las amenazas, las vulnerabilidades y los ataques son el objetivo central de los paladines de ciberseguridad. Una amenaza a la ciberseguridad es la posibilidad de que ocurra un evento nocivo, como un ataque. Una vulnerabilidad es una debilidad que hace que un objetivo sea susceptible a un ataque.
+													</p>
+												</a>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="../images/fulls/01.jpg" alt="" /></a>
+											<a href="cap5.html" class="image"><img src="../images/ciberseguridad.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Cap.5 - El arte de garantizar la integridad.</h4>
+												<a href="cap5.html">
+													<p>
+														Garantiza que nada no nadie modifique los datos y que estos sean confiables durante su ciclo de vida completo.
+													</p>
+												</a>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="../images//fulls/02.jpg" alt="" /></a>
+											<a href="cap6.html" class="image"><img src="../images/altaDisponibilidad.png" alt="" /></a>
 											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Cap.6 - El reino de los cinco nueves</h4>
+												<a href="cap6.html">
+													<p>
+														Las orgranizaciones que desean maximizar la disponibilidad de sus sistemas y datos pueden adoptar medidas extraordinarias para minimizar  o eliminar la pérdida de datos...
+													</p>
+												</a>
 											</div>
 										</article>
 									</div>

@@ -2725,7 +2725,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			padding: 0.9em;
+			padding: 0.5em;
 		}
 
 			#header > header .avatar {
@@ -2791,7 +2791,7 @@ input, select, textarea {
 						border: 0;
 						color: #ffffff !important;
 						display: block;
-						padding: 0.5em 0;
+						padding: 0.15em 0;
 						text-decoration: none;
 					}
 
@@ -2876,7 +2876,7 @@ input, select, textarea {
 			}
 
 				#header > header {
-					padding: 2em;
+					padding: 0.1em;
 				}
 
 				#header > footer {
