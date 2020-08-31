@@ -126,3 +126,7 @@ git sube
 git add cybersecurityEssentials/cap6.html
 git nota "Capítulo 6 - El reino ed los cinco nueves"
 git sube
+
+git add cybersecurityEssentials/cap7.html
+git nota "Capítulo 7 - Protección del reino"
+git sube
