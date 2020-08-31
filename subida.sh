@@ -130,3 +130,11 @@ git sube
 git add cybersecurityEssentials/cap7.html
 git nota "Capítulo 7 - Protección del reino"
 git sube
+
+# +---------------------------------------------+
+# |-----------------   EXAMEN   ----------------|
+# +---------------------------------------------+
+
+git add cybersecurityEssentials/examen/.
+git nota "Documento extraoficial protegido. - mis notas"
+git sube
